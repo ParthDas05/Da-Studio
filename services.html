@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <script>document.documentElement.classList.add('js-active');</script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Turnkey Services & Specifier | DA STUDIOS Architecture Vadodara</title>
+  <meta name="description" content="Turnkey architecture, bespoke interior architecture, BIM 3D simulation, and locked BOQ construction management in Vadodara by DA STUDIOS.">
+  <link rel="canonical" href="https://dastudios.in/services.html">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="apple-touch-icon" href="favicon.svg">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500&family=JetBrains+Mono:wght@300;400;500&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            linen: '#F8F6F0',
+            ivory: '#FCFBF8',
+            travertine: '#F0ECE1',
+            parchment: '#E8E3D5',
+            stoneTaupe: '#8E7D6B',
+            clayMuted: '#9E8D7B',
+            clayDark: '#756555',
+            ink: '#161413',
+            espresso: '#1E1B18',
+            warmSand: '#A3998A',
+            borderHairline: 'rgba(22, 20, 19, 0.08)',
+          },
+          fontFamily: {
+            serif: ['"Cormorant Garamond"', 'Georgia', 'serif'],
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+            mono: ['"JetBrains Mono"', 'monospace'],
+          },
+          borderRadius: {
+            '2xl': '16px',
+            '3xl': '24px',
+            '4xl': '32px',
+            '5xl': '44px',
+            '6xl': '56px',
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    ::selection { background-color: #161413; color: #F8F6F0; }
+    ::-webkit-scrollbar { width: 6px; height: 6px; }
+    ::-webkit-scrollbar-track { background: #F8F6F0; }
+    ::-webkit-scrollbar-thumb { background: #8E7D6B; border-radius: 9999px; }
+
+    @keyframes livePulse {
+      0%, 100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(142, 125, 107, 0.5); }
+      50% { transform: scale(1.2); box-shadow: 0 0 0 6px rgba(142, 125, 107, 0); }
+    }
+    .live-dot {
+      display: inline-block;
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: #8E7D6B;
+      animation: livePulse 2.4s ease-in-out infinite;
+      vertical-align: middle;
+    }
+
+    .reveal-slide-left,
+    .reveal-slide-right,
+    .reveal-fade-up,
+    .reveal-scale {
+      opacity: 1;
+      transform: none;
+      transition: opacity 0.85s cubic-bezier(0.16, 1, 0.3, 1), transform 0.85s cubic-bezier(0.16, 1, 0.3, 1);
+      will-change: transform, opacity;
+    }
+
+    .js-active .reveal-slide-left:not(.is-inview) { opacity: 0; transform: translateX(-50px); }
+    .js-active .reveal-slide-right:not(.is-inview) { opacity: 0; transform: translateX(50px); }
+    .js-active .reveal-fade-up:not(.is-inview) { opacity: 0; transform: translateY(40px); }
+    .js-active .reveal-scale:not(.is-inview) { opacity: 0; transform: scale(0.92) translateY(24px); }
+
+    .is-inview { opacity: 1 !important; transform: none !important; }
+
+    .delay-1 { transition-delay: 0.10s; }
+    .delay-2 { transition-delay: 0.20s; }
+    .delay-3 { transition-delay: 0.30s; }
+
+    .hover-lift-card {
+      transition: transform 0.45s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.45s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.3s ease;
+      will-change: transform;
+    }
+    .hover-lift-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 20px 40px -10px rgba(22, 20, 19, 0.12);
+    }
+
+    .interactive-btn {
+      transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), background-color 0.25s ease, box-shadow 0.3s ease;
+    }
+    .interactive-btn:hover { transform: translateY(-2px); }
+
+    @keyframes valueHighlight {
+      0% { transform: scale(1.04); color: #FCFBF8; }
+      100% { transform: scale(1); color: #F8F6F0; }
+    }
+    .spec-value-changed {
+      animation: valueHighlight 0.45s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    /* ========================================================
+       MOBILE-FIRST DEDICATED LAYOUT & TOUCH MOTION SYSTEM
+       (Zero Impact on PC View - Scoped Strictly to Touch / Mobile)
+       ======================================================== */
+    @media (max-width: 640px) {
+      .hero-display-title {
+        font-size: clamp(1.75rem, 7.8vw, 2.25rem);
+        line-height: 1.05;
+        letter-spacing: -0.02em;
+      }
+      .section-huge-title {
+        font-size: clamp(1.4rem, 5.6vw, 1.85rem);
+        line-height: 1.1;
+      }
+      input[type="text"], input[type="tel"], input[type="email"], select, textarea {
+        font-size: 16px !important;
+      }
+      input[type=range]::-webkit-slider-thumb {
+        height: 22px;
+        width: 22px;
+      }
+    }
+
+    @media (hover: none) and (pointer: coarse), (max-width: 768px) {
+      .hover-lift-card:hover {
+        transform: none !important;
+        box-shadow: 0 4px 16px rgba(22, 20, 19, 0.06) !important;
+      }
+      .interactive-btn:hover {
+        transform: none !important;
+      }
+      .hover-lift-card:active {
+        transform: scale(0.98) !important;
+        transition: transform 0.12s cubic-bezier(0.16, 1, 0.3, 1) !important;
+      }
+      .interactive-btn:active {
+        transform: scale(0.96) !important;
+        transition: transform 0.12s cubic-bezier(0.16, 1, 0.3, 1) !important;
+      }
+      .type-spec-btn:active,
+      .scope-spec-btn:active {
+        transform: scale(0.96) !important;
+      }
+      .mobile-nav-link:active {
+        opacity: 0.6;
+        transform: translateX(4px);
+      }
+      .js-active .reveal-slide-left:not(.is-inview) { transform: translateX(-24px); }
+      .js-active .reveal-slide-right:not(.is-inview) { transform: translateX(24px); }
+      .js-active .reveal-fade-up:not(.is-inview) { transform: translateY(28px); }
+      .js-active .reveal-scale:not(.is-inview) { transform: scale(0.95) translateY(18px); }
+    }
+  </style>
+</head>
+<body class="bg-linen text-ink font-sans antialiased overflow-x-hidden selection:bg-ink selection:text-linen">
+
+  <!-- ==========================================
+       TOP FLOATING EDITORIAL NAVIGATION
+       ========================================== -->
+  <header id="mainHeader" class="fixed top-0 left-0 right-0 z-50 pt-4 sm:pt-6 px-4 sm:px-8 pointer-events-none transition-all duration-300">
+    <div class="max-w-[1600px] mx-auto flex items-center justify-between pointer-events-auto">
+      
+      <!-- Brand Logo / Wordmark -->
+      <a href="index.html" class="flex items-center gap-2 group bg-ivory/90 backdrop-blur-md px-5 py-3 rounded-full border border-borderHairline shadow-sm hover:bg-ivory transition-colors">
+        <span class="font-serif text-2xl sm:text-3xl font-medium tracking-tight text-ink group-hover:text-stoneTaupe transition-colors">DA STUDIOS</span>
+        <span class="hidden sm:inline-flex items-center text-[9px] font-mono tracking-widest text-warmSand uppercase pl-1 border-l border-ink/15">
+          <span class="live-dot mr-1.5"></span>SERVICES
+        </span>
+      </a>
+
+      <!-- Center Floating Pill Navigation -->
+      <nav class="hidden lg:flex items-center gap-1 sm:gap-2 bg-stoneTaupe/90 text-linen/90 backdrop-blur-md px-4 py-2 rounded-full shadow-lg border border-white/10 text-xs font-sans tracking-wide">
+        <a href="index.html" class="px-4 py-2 rounded-full hover:bg-white/15 hover:text-white transition-all">HOME</a>
+        <a href="portfolio.html" class="px-4 py-2 rounded-full hover:bg-white/15 hover:text-white transition-all">PORTFOLIO</a>
+        <a href="services.html" class="px-4 py-2 rounded-full bg-ivory text-ink font-medium shadow-sm">SERVICES</a>
+        <a href="about.html" class="px-4 py-2 rounded-full hover:bg-white/15 hover:text-white transition-all">ABOUT</a>
+        <a href="contact.html" class="px-4 py-2 rounded-full hover:bg-white/15 hover:text-white transition-all">CONTACT</a>
+      </nav>
+
+      <!-- Right Action Pill & Mobile Toggle -->
+      <div class="flex items-center gap-3">
+        <a href="contact.html" class="interactive-btn hidden sm:inline-flex items-center gap-2 bg-ink text-linen hover:bg-espresso text-xs font-sans tracking-wide px-5 py-3 rounded-full shadow-sm transition-all hover:shadow-md">
+          <span>Book Atelier Consultation</span>
+          <i class="fa-solid fa-arrow-right text-[10px]"></i>
+        </a>
+
+        <!-- Mobile Menu Hamburger Button -->
+        <button id="mobileMenuBtn" aria-label="Toggle navigation drawer" class="lg:hidden w-11 h-11 rounded-full bg-ivory/95 border border-borderHairline shadow-sm flex items-center justify-center text-ink hover:bg-white transition-colors">
+          <i class="fa-solid fa-bars-staggered text-sm"></i>
+        </button>
+      </div>
+
+    </div>
+
+    <!-- Mobile Navigation Drawer Dropdown -->
+    <div id="mobileMenuDrawer" class="hidden lg:hidden pointer-events-auto mt-3 max-w-[1600px] mx-auto bg-ivory/95 backdrop-blur-xl border border-borderHairline rounded-3xl p-6 shadow-2xl transition-all">
+      <div class="flex flex-col space-y-4 font-mono text-xs uppercase tracking-wider text-ink">
+        <a href="index.html" class="mobile-nav-link py-1 hover:text-stoneTaupe">01. Atelier Home</a>
+        <a href="portfolio.html" class="mobile-nav-link py-1 hover:text-stoneTaupe">02. Curated Portfolio</a>
+        <a href="services.html" class="mobile-nav-link py-1 text-stoneTaupe font-bold">03. Turnkey Services & Specifier</a>
+        <a href="about.html" class="mobile-nav-link py-1 hover:text-stoneTaupe">04. Philosophy & Craft</a>
+        <a href="contact.html" class="mobile-nav-link py-1 hover:text-stoneTaupe">05. Atelier Consultation</a>
+        <div class="pt-3 border-t border-borderHairline flex items-center justify-between text-[11px] text-warmSand">
+          <a href="tel:+918849410398" class="text-ink underline">+91 88494 10398</a>
+          <span>Alkapuri, Vadodara</span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ==========================================
+       HERO BANNER: DISCIPLINARY OVERVIEW
+       ========================================== -->
+  <main class="pt-20 sm:pt-36 pb-12 sm:pb-28 px-4 sm:px-8 max-w-[1600px] mx-auto space-y-8 sm:space-y-16">
+    
+    <div class="reveal-scale bg-stoneTaupe text-linen rounded-3xl sm:rounded-6xl p-5 sm:p-14 lg:p-16 shadow-2xl relative overflow-hidden">
+      <div class="max-w-4xl space-y-4 sm:space-y-6">
+        <div class="flex items-center gap-2 sm:gap-3 text-[10px] sm:text-xs font-mono tracking-[0.18em] sm:tracking-[0.25em] text-linen/75 uppercase">
+          <span>ATELIER DISCIPLINES: 2026 INDEX</span>
+          <span>•</span>
+          <span>VADODARA REGIONAL STANDARDS</span>
+        </div>
+        
+        <h1 class="font-serif text-3xl sm:text-7xl lg:text-8xl font-light tracking-tight text-linen leading-[0.98]">
+          Turnkey Services
+        </h1>
+        
+        <p class="text-xs sm:text-base text-linen/90 font-light leading-relaxed max-w-2xl">
+          From municipal sanction drawings and structural excavation to master joinery, imported dry-lay stone matching, and 12-month defect guarantees.
+        </p>
+
+        <div class="pt-2 sm:pt-4 flex flex-wrap gap-2 sm:gap-3 font-mono text-[10px] sm:text-xs text-linen/80">
+          <span class="px-3 sm:px-4 py-1.5 sm:py-2 rounded-full bg-black/20 border border-white/10">Locked BOQ Delivery</span>
+          <span class="px-3 sm:px-4 py-1.5 sm:py-2 rounded-full bg-black/20 border border-white/10">1:1 BIM Reality Alignment</span>
+          <span class="px-3 sm:px-4 py-1.5 sm:py-2 rounded-full bg-black/20 border border-white/10">Principal Site Audits</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- ==========================================
+         FOUR ARCHITECTURAL DISCIPLINES
+         ========================================== -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-8">
+      
+      <!-- Discipline 01 -->
+      <div class="reveal-slide-left hover-lift-card bg-ivory rounded-2xl sm:rounded-4xl p-5 sm:p-10 border border-borderHairline shadow-sm space-y-4 sm:space-y-6">
+        <div class="w-10 sm:w-12 h-10 sm:h-12 rounded-xl sm:rounded-2xl bg-travertine flex items-center justify-center text-ink text-base sm:text-xl">
+          <i class="fa-solid fa-compass-drafting"></i>
+        </div>
+        <div>
+          <span class="text-[10px] sm:text-xs font-mono tracking-widest text-warmSand uppercase block mb-1">DISCIPLINE 01</span>
+          <h2 class="font-serif text-xl sm:text-3xl text-ink font-normal">Full Turnkey Architecture</h2>
+        </div>
+        <p class="text-xs sm:text-sm text-ink/80 font-light leading-relaxed">
+          Comprehensive ground-up design and structural execution for private residential bungalows in Bhayli, Sevasi, and Gotri. We handle soil mechanics, VMC municipal sanctions, structural concrete, waterproofing guarantees, and complete envelope construction.
+        </p>
+        <ul class="space-y-1.5 sm:space-y-2 font-mono text-[11px] sm:text-xs text-ink/75 pt-2 border-t border-borderHairline">
+          <li>• Structural RCC and board-marked monolithic walls</li>
+          <li>• Solar-oriented cantilevers and passive cooling cross-drafts</li>
+          <li>• Acoustic double-glazed fenestration envelopes</li>
+          <li>• Locked construction schedules with milestone reporting</li>
+        </ul>
+      </div>
+
+      <!-- Discipline 02 -->
+      <div class="reveal-slide-right delay-1 hover-lift-card bg-ivory rounded-2xl sm:rounded-4xl p-5 sm:p-10 border border-borderHairline shadow-sm space-y-4 sm:space-y-6">
+        <div class="w-10 sm:w-12 h-10 sm:h-12 rounded-xl sm:rounded-2xl bg-travertine flex items-center justify-center text-ink text-base sm:text-xl">
+          <i class="fa-solid fa-couch"></i>
+        </div>
+        <div>
+          <span class="text-[10px] sm:text-xs font-mono tracking-widest text-warmSand uppercase block mb-1">DISCIPLINE 02</span>
+          <h2 class="font-serif text-xl sm:text-3xl text-ink font-normal">Bespoke Interior Living</h2>
+        </div>
+        <p class="text-xs sm:text-sm text-ink/80 font-light leading-relaxed">
+          Tactile interior curation for luxury penthouses, duplex residences, and executive retreats. Continuous wire-brushed smoked oak joinery, concealed wardrobe systems, and hand-troweled slaked lime plaster crafted by our in-house Alkapuri atelier team.
+        </p>
+        <ul class="space-y-1.5 sm:space-y-2 font-mono text-[11px] sm:text-xs text-ink/75 pt-2 border-t border-borderHairline">
+          <li>• Concealed ceiling air-conditioning & linear slot diffusers</li>
+          <li>• Flos & Lutron museum-grade ambient lighting schemes</li>
+          <li>• Master joinery fabricated in controlled studio environment</li>
+          <li>• Ergonomic kitchen planning & Poliform-grade hardware</li>
+        </ul>
+      </div>
+
+      <!-- Discipline 03 -->
+      <div class="reveal-slide-left delay-2 hover-lift-card bg-ivory rounded-2xl sm:rounded-4xl p-5 sm:p-10 border border-borderHairline shadow-sm space-y-4 sm:space-y-6">
+        <div class="w-10 sm:w-12 h-10 sm:h-12 rounded-xl sm:rounded-2xl bg-travertine flex items-center justify-center text-ink text-base sm:text-xl">
+          <i class="fa-solid fa-cube"></i>
+        </div>
+        <div>
+          <span class="text-[10px] sm:text-xs font-mono tracking-widest text-warmSand uppercase block mb-1">DISCIPLINE 03</span>
+          <h2 class="font-serif text-xl sm:text-3xl text-ink font-normal">1:1 BIM & Digital Simulation</h2>
+        </div>
+        <p class="text-xs sm:text-sm text-ink/80 font-light leading-relaxed">
+          We eliminate the discrepancy between 3D renderings and built handover through high-precision parametric BIM modeling. Every stone vein, curtain pocket, and MEP channel is verified dimensionally before physical site execution begins.
+        </p>
+        <ul class="space-y-1.5 sm:space-y-2 font-mono text-[11px] sm:text-xs text-ink/75 pt-2 border-t border-borderHairline">
+          <li>• Photorealistic daylight simulation calibrated to Vadodara solar paths</li>
+          <li>• Exact collision detection for plumbing and HVAC ducts</li>
+          <li>• Full virtual walkthrough before procurement release</li>
+          <li>• Direct CAD-to-millwork machine output</li>
+        </ul>
+      </div>
+
+      <!-- Discipline 04 -->
+      <div class="reveal-slide-right delay-3 hover-lift-card bg-ivory rounded-2xl sm:rounded-4xl p-5 sm:p-10 border border-borderHairline shadow-sm space-y-4 sm:space-y-6">
+        <div class="w-10 sm:w-12 h-10 sm:h-12 rounded-xl sm:rounded-2xl bg-travertine flex items-center justify-center text-ink text-base sm:text-xl">
+          <i class="fa-solid fa-gem"></i>
+        </div>
+        <div>
+          <span class="text-[10px] sm:text-xs font-mono tracking-widest text-warmSand uppercase block mb-1">DISCIPLINE 04</span>
+          <h2 class="font-serif text-xl sm:text-3xl text-ink font-normal">Stone Provenance & Dry-Lay</h2>
+        </div>
+        <p class="text-xs sm:text-sm text-ink/80 font-light leading-relaxed">
+          Direct quarry block inspection and slab sequencing at Kishangarh and Italian warehouse hubs. Natural Roman Navona Travertine, Statuario marble, and charcoal quartzite are dry-laid on studio floors to verify vein harmony before site installation.
+        </p>
+        <ul class="space-y-1.5 sm:space-y-2 font-mono text-[11px] sm:text-xs text-ink/75 pt-2 border-t border-borderHairline">
+          <li>• Hand-inspected slab density and void filling checks</li>
+          <li>• Laser-guided bookmatching and continuous grain lines</li>
+          <li>• Anti-efflorescence sealing tailored to Gujarat groundwater</li>
+          <li>• Zero compromise on mineral thickness and calibration</li>
+        </ul>
+      </div>
+
+    </div>
+
+    <!-- ==========================================
+         INTERACTIVE FEASIBILITY SPECIFIER SECTION
+         ========================================== -->
+    <div id="specifier" class="reveal-fade-up bg-stoneTaupe text-linen rounded-3xl sm:rounded-6xl p-5 sm:p-14 lg:p-16 shadow-2xl space-y-6 sm:space-y-10">
+      
+      <div class="max-w-3xl">
+        <span class="text-[10px] sm:text-xs font-mono tracking-[0.25em] text-linen/75 uppercase block mb-1.5 sm:mb-2">DIGITAL ESTIMATION TOOL</span>
+        <h2 class="font-serif text-2xl sm:text-6xl font-light text-linen">
+          Investment & Timeline Modeling
+        </h2>
+        <p class="text-xs sm:text-sm text-linen/85 font-light mt-1.5 sm:mt-2 leading-relaxed">
+          Calibrated to 2026 Vadodara civil, MEP, joinery, and imported material indices.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 sm:gap-8 items-start">
+        
+        <!-- Controls Column -->
+        <div class="lg:col-span-7 bg-ivory text-ink rounded-2xl sm:rounded-4xl p-4 sm:p-10 border border-borderHairline shadow-sm space-y-6 sm:space-y-8">
+          
+          <!-- Typology Selector -->
+          <div>
+            <label class="block text-[11px] sm:text-xs font-mono uppercase tracking-wider text-warmSand mb-2.5 sm:mb-3">
+              [01] Property Typology
+            </label>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-2.5 sm:gap-3" id="typologyGroup">
+              <button type="button" data-rate="3200" data-months="14" class="type-spec-btn active p-3 sm:p-4 text-left rounded-xl sm:rounded-2xl border border-ink bg-travertine transition-all">
+                <span class="font-serif text-base sm:text-lg text-ink block font-normal">Bespoke Bungalow</span>
+                <span class="font-mono text-[9px] sm:text-[10px] text-warmSand">G+2 Structure / Bhayli / Sevasi</span>
+              </button>
+              <button type="button" data-rate="2700" data-months="9" class="type-spec-btn p-3 sm:p-4 text-left rounded-xl sm:rounded-2xl border border-borderHairline bg-ivory hover:border-ink/50 transition-all">
+                <span class="font-serif text-base sm:text-lg text-ink block font-normal">Sky Penthouse / Duplex</span>
+                <span class="font-mono text-[9px] sm:text-[10px] text-warmSand">High-Rise / Alkapuri</span>
+              </button>
+              <button type="button" data-rate="2400" data-months="7" class="type-spec-btn p-3 sm:p-4 text-left rounded-xl sm:rounded-2xl border border-borderHairline bg-ivory hover:border-ink/50 transition-all">
+                <span class="font-serif text-base sm:text-lg text-ink block font-normal">4 / 5 BHK Luxury Flat</span>
+                <span class="font-mono text-[9px] sm:text-[10px] text-warmSand">Gated Community / Vasna-Bhayli</span>
+              </button>
+              <button type="button" data-rate="3600" data-months="6" class="type-spec-btn p-3 sm:p-4 text-left rounded-xl sm:rounded-2xl border border-borderHairline bg-ivory hover:border-ink/50 transition-all">
+                <span class="font-serif text-base sm:text-lg text-ink block font-normal">Commercial Atelier</span>
+                <span class="font-mono text-[9px] sm:text-[10px] text-warmSand">Executive Suite / Clinic</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Area Slider -->
+          <div>
+            <div class="flex justify-between items-baseline mb-2 sm:mb-3">
+              <label class="text-[11px] sm:text-xs font-mono uppercase tracking-wider text-warmSand">
+                [02] Built-up / Carpet Area
+              </label>
+              <div class="font-mono text-sm sm:text-base text-ink font-medium">
+                <span id="specAreaNumber">6,500</span> <span class="text-warmSand text-[11px] sm:text-xs">SQ.FT</span>
+              </div>
+            </div>
+            <input type="range" id="specAreaSlider" min="2000" max="15000" step="250" value="6500" class="w-full appearance-none cursor-pointer"/>
+            <div class="flex justify-between font-mono text-[9px] sm:text-[10px] text-warmSand mt-2">
+              <span>2,000 SQ.FT</span>
+              <span>7,500 SQ.FT (TYPICAL VILLA)</span>
+              <span>15,000 SQ.FT</span>
+            </div>
+          </div>
+
+          <!-- Scope -->
+          <div>
+            <label class="block text-[11px] sm:text-xs font-mono uppercase tracking-wider text-warmSand mb-2.5 sm:mb-3">
+              [03] Scope of Atelier Engagement
+            </label>
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-2.5 sm:gap-3" id="scopeSpecGroup">
+              <button type="button" data-multiplier="1.35" class="scope-spec-btn active p-2.5 sm:p-3 text-left rounded-xl sm:rounded-2xl border border-ink bg-travertine transition-all">
+                <span class="font-mono text-xs text-ink block font-medium">Full Turnkey</span>
+                <span class="font-mono text-[9px] sm:text-[10px] text-warmSand">Architecture + Interiors</span>
+              </button>
+              <button type="button" data-multiplier="1.0" class="scope-spec-btn p-2.5 sm:p-3 text-left rounded-xl sm:rounded-2xl border border-borderHairline bg-ivory hover:border-ink/50 transition-all">
+                <span class="font-mono text-xs text-ink block font-medium">Interior Fit-Out</span>
+                <span class="font-mono text-[9px] sm:text-[10px] text-warmSand">Bespoke Fit-Out Only</span>
+              </button>
+              <button type="button" data-multiplier="0.45" class="scope-spec-btn p-2.5 sm:p-3 text-left rounded-xl sm:rounded-2xl border border-borderHairline bg-ivory hover:border-ink/50 transition-all">
+                <span class="font-mono text-xs text-ink block font-medium">BIM & Advisory</span>
+                <span class="font-mono text-[9px] sm:text-[10px] text-warmSand">Drawings & Supervision</span>
+              </button>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Output Summary Card -->
+        <div class="lg:col-span-5 bg-black/20 rounded-2xl sm:rounded-4xl p-5 sm:p-10 border border-white/10 space-y-5 sm:space-y-6">
+          <div class="flex justify-between items-baseline border-b border-white/20 pb-3 sm:pb-4 font-mono text-[11px] sm:text-xs">
+            <span class="text-linen/70 uppercase">FEASIBILITY REPORT</span>
+            <span class="font-medium text-linen">VADODARA 2026</span>
+          </div>
+
+          <div>
+            <span class="text-[9px] sm:text-[10px] font-mono text-linen/75 uppercase tracking-wider block">PROJECTED TOTAL INVESTMENT RANGE</span>
+            <div class="font-serif text-2xl sm:text-4xl lg:text-5xl text-linen font-light tracking-tight mt-1" id="specOutputCost">
+              ₹ 2.10 Cr to 2.45 Cr
+            </div>
+            <div class="font-mono text-[9px] sm:text-[10px] text-linen/60 mt-1.5 sm:mt-2">
+              *Includes civil, joinery, imported stone, MEP & HVAC coordination.
+            </div>
+          </div>
+
+          <div class="grid grid-cols-2 gap-3 sm:gap-4 p-3.5 sm:p-4 rounded-xl sm:rounded-2xl bg-black/30 font-mono text-xs border border-white/10">
+            <div>
+              <span class="text-linen/60 text-[9px] sm:text-[10px] block">TURNKEY DELIVERY</span>
+              <span class="text-linen font-medium text-xs sm:text-sm" id="specOutputMonths">12 to 14 Months</span>
+            </div>
+            <div>
+              <span class="text-linen/60 text-[9px] sm:text-[10px] block">BOQ INTEGRITY</span>
+              <span class="text-linen font-medium text-xs sm:text-sm">Locked Prior to Build</span>
+            </div>
+          </div>
+
+          <div class="pt-3 sm:pt-4 border-t border-white/20">
+            <a id="specWhatsAppLink" href="#" target="_blank" class="interactive-btn w-full py-3.5 sm:py-4 bg-ivory text-ink hover:bg-linen font-sans font-medium text-xs tracking-wider uppercase rounded-full flex items-center justify-center gap-2 shadow-lg transition-transform hover:scale-[1.02] active:scale-95">
+              <span>Transmit Feasibility to Atelier</span>
+              <i class="fa-solid fa-arrow-right text-[10px]"></i>
+            </a>
+            <div class="text-center font-mono text-[9px] sm:text-[10px] text-linen/60 mt-2 sm:mt-3">
+              Direct connection with Alkapuri Atelier Principal / +91 88494 10398
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+  </main>
+
+  <!-- ==========================================
+       EDITORIAL COLOPHON FOOTER
+       ========================================== -->
+  <footer class="bg-espresso text-linen/75 font-mono text-xs py-10 sm:py-20 border-t border-white/10">
+    <div class="max-w-[1600px] mx-auto px-4 sm:px-8 space-y-8 sm:space-y-12">
+      <div class="grid grid-cols-1 md:grid-cols-12 gap-8 sm:gap-10 pb-8 sm:pb-12 border-b border-white/10">
+        <div class="md:col-span-5 space-y-3 sm:space-y-4">
+          <div class="font-serif text-2xl sm:text-3xl text-linen font-light tracking-wide">DA STUDIOS ARCHITECTURE</div>
+          <p class="font-sans text-xs text-linen/70 font-light leading-relaxed max-w-sm">
+            Atelier for private architecture, bespoke turnkey interiors, and spatial curation. Serving discerning patrons across Bhayli, Sevasi, and Central Vadodara.
+          </p>
+          <div class="text-[11px] text-linen/50">
+            Vicenza House 21, Friends Society, Alkapuri, Vadodara 390007
+          </div>
+        </div>
+
+        <div class="md:col-span-3 space-y-2 text-xs">
+          <span class="text-linen/40 uppercase block mb-3">KEY ATELIER DIRECTORY</span>
+          <div><a href="index.html" class="text-linen hover:underline">Atelier Home</a></div>
+          <div><a href="portfolio.html" class="text-linen hover:underline">Selected Portfolio</a></div>
+          <div><a href="services.html" class="text-linen hover:underline font-bold">Turnkey Services</a></div>
+          <div><a href="about.html" class="text-linen hover:underline">Philosophy & Craft</a></div>
+          <div><a href="contact.html" class="text-linen hover:underline">Schedule Consultation</a></div>
+        </div>
+
+        <div class="md:col-span-4 space-y-3 text-xs">
+          <span class="text-linen/40 uppercase block mb-3">DIRECT COMMUNICATION</span>
+          <div>TEL: <a href="tel:+918849410398" class="text-linen hover:underline">+91 88494 10398</a></div>
+          <div>HOURS: MON TO SAT, 10:00 TO 19:30 IST</div>
+          <div>ATELIER: ALKAPURI, VADODARA, GUJARAT</div>
+        </div>
+      </div>
+
+      <div class="flex flex-col lg:flex-row justify-between items-center gap-6 text-[11px] text-linen/50">
+        <div>© 2026 DA STUDIOS ARCHITECTURE. ALL RIGHTS RESERVED.</div>
+        <div class="flex flex-wrap gap-6 text-linen/80 font-sans text-xs">
+          <a href="privacy-policy.html" class="hover:text-linen transition-colors underline decoration-white/20 underline-offset-4">Privacy Policy</a>
+          <a href="terms-and-conditions.html" class="hover:text-linen transition-colors underline decoration-white/20 underline-offset-4">Terms & Conditions</a>
+        </div>
+        <div class="flex gap-4 font-mono text-[10px]">
+          <span>COORDINATES: 22.3072° N, 73.1812° E</span>
+          <span>BIM TO SITE FIDELITY</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- SCRIPT -->
+  <script>
+    // 1. Mobile Menu Drawer
+    const mobileBtn = document.getElementById('mobileMenuBtn');
+    const mobileDrawer = document.getElementById('mobileMenuDrawer');
+    if (mobileBtn && mobileDrawer) {
+      mobileBtn.addEventListener('click', () => {
+        mobileDrawer.classList.toggle('hidden');
+      });
+    }
+
+    // 2. Feasibility Specifier Logic
+    let specRate = 3200;
+    let specMonthsBase = 14;
+    let specScopeMult = 1.35;
+    let specTypologyLabel = "Bespoke Bungalow";
+    let specScopeLabel = "Full Turnkey Architecture & Interiors";
+
+    const specSlider = document.getElementById('specAreaSlider');
+    const specAreaText = document.getElementById('specAreaNumber');
+    const specCostText = document.getElementById('specOutputCost');
+    const specMonthsText = document.getElementById('specOutputMonths');
+    const specWhatsApp = document.getElementById('specWhatsAppLink');
+
+    function calculateSpecifier() {
+      const area = parseInt(specSlider.value, 10);
+      specAreaText.textContent = area.toLocaleString('en-IN');
+
+      const raw = area * specRate * specScopeMult * 1.35;
+      const lower = raw * 0.93;
+      const upper = raw * 1.07;
+
+      function formatCr(val) {
+        if (val >= 10000000) {
+          return '₹ ' + (val / 10000000).toFixed(2) + ' Cr';
+        } else {
+          return '₹ ' + (val / 100000).toFixed(0) + ' Lakhs';
+        }
+      }
+
+      specCostText.textContent = `${formatCr(lower)} to ${formatCr(upper)}`;
+      specCostText.classList.remove('spec-value-changed');
+      void specCostText.offsetWidth;
+      specCostText.classList.add('spec-value-changed');
+
+      let months = Math.round(specMonthsBase * (0.85 + (area / 11000)));
+      if (specScopeMult < 0.6) months = Math.max(3, Math.round(months * 0.45));
+      specMonthsText.textContent = `${months} to ${months + 3} Months`;
+
+      const brief = `Namaste Da Studios Atelier (Alkapuri), I configured an architectural project brief:%0A%0A` +
+        `• Typology: ${encodeURIComponent(specTypologyLabel)}%0A` +
+        `• Area: ${area.toLocaleString('en-IN')} sq.ft%0A` +
+        `• Scope: ${encodeURIComponent(specScopeLabel)}%0A` +
+        `• Estimated Investment: ${formatCr(lower)} - ${formatCr(upper)}%0A` +
+        `• Estimated Timeline: ${months}-${months + 3} Months%0A%0A` +
+        `I would like to arrange an atelier appointment to review architectural drawings and site feasibility.`;
+
+      specWhatsApp.href = `https://wa.me/918849410398?text=${brief}`;
+    }
+
+    document.querySelectorAll('.type-spec-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        document.querySelectorAll('.type-spec-btn').forEach(b => {
+          b.classList.remove('active', 'border-ink', 'bg-travertine');
+          b.classList.add('border-borderHairline', 'bg-ivory');
+        });
+        btn.classList.add('active', 'border-ink', 'bg-travertine');
+        btn.classList.remove('border-borderHairline', 'bg-ivory');
+
+        specRate = parseFloat(btn.getAttribute('data-rate'));
+        specMonthsBase = parseInt(btn.getAttribute('data-months'), 10);
+        specTypologyLabel = btn.querySelector('.font-serif').textContent;
+        calculateSpecifier();
+      });
+    });
+
+    document.querySelectorAll('.scope-spec-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        document.querySelectorAll('.scope-spec-btn').forEach(b => {
+          b.classList.remove('active', 'border-ink', 'bg-travertine');
+          b.classList.add('border-borderHairline', 'bg-ivory');
+        });
+        btn.classList.add('active', 'border-ink', 'bg-travertine');
+        btn.classList.remove('border-borderHairline', 'bg-ivory');
+
+        specScopeMult = parseFloat(btn.getAttribute('data-multiplier'));
+        specScopeLabel = btn.querySelector('.font-mono:first-child').textContent;
+        calculateSpecifier();
+      });
+    });
+
+    if (specSlider) {
+      specSlider.addEventListener('input', calculateSpecifier);
+      calculateSpecifier();
+    }
+
+    // 3. Directional Scroll Reveal Engine
+    const revealSelector = '.reveal-slide-left, .reveal-slide-right, .reveal-fade-up, .reveal-scale';
+    try {
+      if ('IntersectionObserver' in window) {
+        const observer = new IntersectionObserver((entries, obs) => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add('is-inview');
+              obs.unobserve(entry.target);
+            }
+          });
+        }, { threshold: 0.04, rootMargin: '0px 0px -20px 0px' });
+
+        document.querySelectorAll(revealSelector).forEach(el => observer.observe(el));
+      } else {
+        document.querySelectorAll(revealSelector).forEach(el => el.classList.add('is-inview'));
+      }
+    } catch (e) {
+      document.querySelectorAll(revealSelector).forEach(el => el.classList.add('is-inview'));
+    }
+  </script>
+</body>
+</html>

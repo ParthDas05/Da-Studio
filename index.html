@@ -1,0 +1,1992 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <script>document.documentElement.classList.add('js-active');</script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DA STUDIOS | Atelier for Architecture & Turnkey Living, Vadodara</title>
+  <meta name="description" content="DA STUDIOS is a luxury architectural and turnkey interior atelier in Alkapuri, Vadodara. Designing and building bespoke private estates across Bhayli, Sevasi, and Central Gujarat.">
+  <link rel="canonical" href="https://dastudios.in">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="apple-touch-icon" href="favicon.svg">
+
+  <!-- Curated High-Fashion Editorial Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=JetBrains+Mono:wght@300;400;500&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            linen: '#F8F6F0',
+            ivory: '#FCFBF8',
+            travertine: '#F0ECE1',
+            parchment: '#E8E3D5',
+            stoneTaupe: '#8E7D6B',
+            clayMuted: '#9E8D7B',
+            clayDark: '#756555',
+            ink: '#161413',
+            espresso: '#1E1B18',
+            warmSand: '#A3998A',
+            borderHairline: 'rgba(22, 20, 19, 0.08)',
+            borderHairlineLight: 'rgba(248, 246, 240, 0.18)',
+          },
+          fontFamily: {
+            serif: ['"Cormorant Garamond"', 'Georgia', 'serif'],
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+            mono: ['"JetBrains Mono"', 'monospace'],
+          },
+          borderRadius: {
+            '2xl': '16px',
+            '3xl': '24px',
+            '4xl': '32px',
+            '5xl': '44px',
+            '6xl': '56px',
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    ::selection {
+      background-color: #161413;
+      color: #F8F6F0;
+    }
+    ::-webkit-scrollbar {
+      width: 6px;
+      height: 6px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #F8F6F0;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #8E7D6B;
+      border-radius: 9999px;
+    }
+
+    /* Fluid Editorial Typography */
+    .hero-display-title {
+      font-size: clamp(3.2rem, 8.5vw, 8.2rem);
+      line-height: 0.9;
+      letter-spacing: -0.03em;
+    }
+    .section-huge-title {
+      font-size: clamp(2.4rem, 5.5vw, 5.5rem);
+      line-height: 0.95;
+      letter-spacing: -0.02em;
+    }
+    .watermark-text {
+      font-size: clamp(4.5rem, 16vw, 17rem);
+      line-height: 0.8;
+      letter-spacing: -0.02em;
+      user-select: none;
+      pointer-events: none;
+    }
+
+    /* Subtle Image Hover Zoom */
+    .img-zoom-card {
+      overflow: hidden;
+      position: relative;
+    }
+    .img-zoom-card img {
+      transition: transform 1.2s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .img-zoom-card:hover img {
+      transform: scale(1.06);
+    }
+
+    /* Continuous Infinite Marquee */
+    @keyframes marqueeScroll {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(-50%); }
+    }
+    .marquee-track {
+      display: flex;
+      width: max-content;
+      animation: marqueeScroll 36s linear infinite;
+    }
+    .marquee-track:hover {
+      animation-play-state: paused;
+    }
+
+    /* Minimal Range Slider */
+    input[type=range]::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      height: 20px;
+      width: 20px;
+      border-radius: 50%;
+      background: #161413;
+      border: 2px solid #F8F6F0;
+      cursor: pointer;
+      box-shadow: 0 3px 8px rgba(0,0,0,0.18);
+      transition: transform 0.2s ease;
+    }
+    input[type=range]::-webkit-slider-thumb:hover {
+      transform: scale(1.15);
+    }
+    input[type=range]::-webkit-slider-runnable-track {
+      height: 4px;
+      border-radius: 9999px;
+      background: #D9D2C3;
+    }
+
+    /* ========================================================
+       PREMIUM ARCHITECTURAL MOTION SYSTEM
+       (Fail-Safe, High-Fidelity, Smooth 60fps Transitions)
+       ======================================================== */
+
+    /* 1. Cinematic Page Entrance Keyframes */
+    @keyframes atelierFadeInUp {
+      0% {
+        opacity: 0;
+        transform: translateY(24px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes atelierScaleIn {
+      0% {
+        opacity: 0;
+        transform: scale(0.96) translateY(18px);
+      }
+      100% {
+        opacity: 1;
+        transform: scale(1) translateY(0);
+      }
+    }
+
+    @keyframes atelierExpandLine {
+      0% {
+        transform: scaleX(0);
+        opacity: 0;
+      }
+      100% {
+        transform: scaleX(1);
+        opacity: 1;
+      }
+    }
+
+    /* Hero Stagger Classes (Only animate smoothly on page load, never stay hidden) */
+    .anim-hero-tag {
+      animation: atelierFadeInUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) 0.1s backwards;
+    }
+    .anim-hero-thumb-1 {
+      animation: atelierScaleIn 0.8s cubic-bezier(0.16, 1, 0.3, 1) 0.15s backwards;
+    }
+    .anim-hero-thumb-2 {
+      animation: atelierScaleIn 0.8s cubic-bezier(0.16, 1, 0.3, 1) 0.25s backwards;
+    }
+    .anim-hero-thumb-3 {
+      animation: atelierScaleIn 0.8s cubic-bezier(0.16, 1, 0.3, 1) 0.35s backwards;
+    }
+    .anim-hero-title-1 {
+      animation: atelierFadeInUp 1s cubic-bezier(0.16, 1, 0.3, 1) 0.2s backwards;
+    }
+    .anim-hero-title-2 {
+      animation: atelierFadeInUp 1s cubic-bezier(0.16, 1, 0.3, 1) 0.32s backwards;
+    }
+    .anim-hero-divider {
+      transform-origin: left;
+      animation: atelierExpandLine 1.1s cubic-bezier(0.16, 1, 0.3, 1) 0.4s backwards;
+    }
+    .anim-hero-sub {
+      animation: atelierFadeInUp 0.9s cubic-bezier(0.16, 1, 0.3, 1) 0.45s backwards;
+    }
+    .anim-hero-pills {
+      animation: atelierFadeInUp 0.9s cubic-bezier(0.16, 1, 0.3, 1) 0.55s backwards;
+    }
+    .anim-hero-main {
+      animation: atelierScaleIn 1.2s cubic-bezier(0.16, 1, 0.3, 1) 0.25s backwards;
+    }
+    .anim-hero-floating {
+      animation: atelierFadeInUp 1s cubic-bezier(0.16, 1, 0.3, 1) 0.6s backwards;
+    }
+
+    /* 2. Micro-Pulse for Live Status Badges */
+    @keyframes livePulse {
+      0%, 100% {
+        transform: scale(1);
+        box-shadow: 0 0 0 0 rgba(142, 125, 107, 0.5);
+      }
+      50% {
+        transform: scale(1.2);
+        box-shadow: 0 0 0 6px rgba(142, 125, 107, 0);
+      }
+    }
+    .live-dot {
+      display: inline-block;
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: #8E7D6B;
+      animation: livePulse 2.4s ease-in-out infinite;
+      vertical-align: middle;
+    }
+
+    /* 3. Interactive Curtain Handle Hint Pulse */
+    @keyframes handleHintPulse {
+      0%, 100% {
+        box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.6), 0 8px 24px rgba(0, 0, 0, 0.35);
+      }
+      50% {
+        box-shadow: 0 0 0 10px rgba(255, 255, 255, 0), 0 12px 30px rgba(0, 0, 0, 0.45);
+      }
+    }
+    .curtain-handle-pulse {
+      animation: handleHintPulse 2.8s ease-in-out infinite;
+    }
+
+    /* 4. Complete Directional Scroll Motion Suite (Slide Left/Right, Fade Up, Scale In) */
+    .reveal-slide-left,
+    .reveal-slide-right,
+    .reveal-fade-up,
+    .reveal-scale,
+    .motion-reveal {
+      opacity: 1;
+      transform: none;
+      transition: opacity 0.85s cubic-bezier(0.16, 1, 0.3, 1), transform 0.85s cubic-bezier(0.16, 1, 0.3, 1);
+      will-change: transform, opacity;
+    }
+
+    .js-active .reveal-slide-left:not(.is-inview) {
+      opacity: 0;
+      transform: translateX(-56px);
+    }
+    .js-active .reveal-slide-right:not(.is-inview) {
+      opacity: 0;
+      transform: translateX(56px);
+    }
+    .js-active .reveal-fade-up:not(.is-inview),
+    .js-active .motion-reveal:not(.in-view):not(.is-inview) {
+      opacity: 0;
+      transform: translateY(44px);
+    }
+    .js-active .reveal-scale:not(.is-inview) {
+      opacity: 0;
+      transform: scale(0.92) translateY(28px);
+    }
+
+    .is-inview,
+    .in-view {
+      opacity: 1 !important;
+      transform: none !important;
+    }
+
+    /* Stagger Delays for Grid Cascades */
+    .delay-1 { transition-delay: 0.10s; }
+    .delay-2 { transition-delay: 0.20s; }
+    .delay-3 { transition-delay: 0.30s; }
+    .delay-4 { transition-delay: 0.40s; }
+    .delay-5 { transition-delay: 0.50s; }
+    .delay-6 { transition-delay: 0.60s; }
+
+    /* 5. Expanding Architectural Hairline on Scroll */
+    .expand-line {
+      transform-origin: left;
+      transition: transform 1.2s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .js-active .expand-line:not(.is-inview) {
+      transform: scaleX(0);
+    }
+    .expand-line.is-inview {
+      transform: scaleX(1) !important;
+    }
+
+    /* 6. Tactile Card Hover Physics */
+    .hover-lift-card {
+      transition: transform 0.45s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.45s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.3s ease;
+      will-change: transform;
+    }
+    .hover-lift-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 24px 50px -12px rgba(22, 20, 19, 0.14);
+      border-color: rgba(22, 20, 19, 0.2);
+    }
+
+    /* 7. Button Arrow Interactive Slide & Magnetic Feedback */
+    .interactive-btn {
+      transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), background-color 0.25s ease, box-shadow 0.3s ease;
+    }
+    .interactive-btn:hover {
+      transform: translateY(-2px);
+    }
+    .interactive-btn:active {
+      transform: translateY(0);
+    }
+    .interactive-btn i, .interactive-btn svg {
+      transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .interactive-btn:hover i, .interactive-btn:hover svg {
+      transform: translateX(5px);
+    }
+
+    /* 8. Specifier Output Value Pulse Transition */
+    @keyframes valueHighlight {
+      0% { transform: scale(1.04); color: #FCFBF8; }
+      100% { transform: scale(1); color: #F8F6F0; }
+    }
+    .spec-value-changed {
+      animation: valueHighlight 0.45s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    /* 9. Slide-in Drawer Transition */
+    #archiveModalDrawer {
+      transition: transform 0.45s cubic-bezier(0.16, 1, 0.3, 1);
+      transform: translateX(100%);
+    }
+    #archiveModal:not(.hidden) #archiveModalDrawer {
+      transform: translateX(0);
+    }
+
+    /* 10. Hover Icon Rotations */
+    .hover-rotate-icon {
+      transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .group:hover .hover-rotate-icon {
+      transform: rotate(45deg) scale(1.1);
+    }
+
+    /* ========================================================
+       MOBILE-FIRST DEDICATED LAYOUT & TOUCH MOTION SYSTEM
+       (Zero Impact on PC View - Scoped Strictly to Touch / Mobile)
+       ======================================================== */
+    @media (max-width: 640px) {
+      /* Scaled down, refined typography scale for mobile screens */
+      .hero-display-title {
+        font-size: clamp(1.75rem, 7.8vw, 2.25rem);
+        line-height: 1.08;
+        letter-spacing: -0.02em;
+      }
+      .section-huge-title {
+        font-size: clamp(1.4rem, 5.6vw, 1.85rem);
+        line-height: 1.15;
+        letter-spacing: -0.015em;
+      }
+      .watermark-text {
+        font-size: clamp(1.8rem, 9.5vw, 2.8rem);
+        line-height: 1;
+      }
+
+      /* Compact mobile section vertical spacing */
+      .mobile-compact-py {
+        padding-top: 3.5rem !important;
+        padding-bottom: 3.5rem !important;
+      }
+
+      /* Prevent iOS Safari auto-zoom on input tap */
+      input[type="text"],
+      input[type="tel"],
+      input[type="email"],
+      select,
+      textarea {
+        font-size: 16px !important;
+      }
+
+      /* Finger-friendly slider thumb */
+      input[type=range]::-webkit-slider-thumb {
+        height: 22px;
+        width: 22px;
+      }
+    }
+
+    /* Dedicated Touch Feedback & Mobile Animation (No Stuck Mouse Hovers) */
+    @media (hover: none) and (pointer: coarse), (max-width: 768px) {
+      /* Neutralize sticky mouse hovers on mobile fingers */
+      .hover-lift-card:hover {
+        transform: none !important;
+        box-shadow: 0 4px 16px rgba(22, 20, 19, 0.06) !important;
+      }
+      .img-zoom-card:hover img {
+        transform: none !important;
+      }
+      .interactive-btn:hover {
+        transform: none !important;
+      }
+      .interactive-btn:hover i,
+      .interactive-btn:hover svg {
+        transform: none !important;
+      }
+
+      /* Tactile Finger-Press / Tap Physics */
+      .hover-lift-card:active {
+        transform: scale(0.98) !important;
+        transition: transform 0.12s cubic-bezier(0.16, 1, 0.3, 1) !important;
+      }
+      .interactive-btn:active {
+        transform: scale(0.96) !important;
+        transition: transform 0.12s cubic-bezier(0.16, 1, 0.3, 1) !important;
+      }
+      .port-filter-btn:active,
+      .type-spec-btn:active,
+      .scope-spec-btn:active,
+      .grade-spec-btn:active {
+        transform: scale(0.96) !important;
+        transition: transform 0.1s ease !important;
+      }
+      .mobile-nav-link:active {
+        opacity: 0.6;
+        transform: translateX(4px);
+        transition: all 0.15s ease;
+      }
+
+      /* Tighter mobile travel offsets to eliminate horizontal overflow */
+      .js-active .reveal-slide-left:not(.is-inview) {
+        transform: translateX(-24px);
+      }
+      .js-active .reveal-slide-right:not(.is-inview) {
+        transform: translateX(24px);
+      }
+      .js-active .reveal-fade-up:not(.is-inview),
+      .js-active .motion-reveal:not(.in-view):not(.is-inview) {
+        transform: translateY(28px);
+      }
+      .js-active .reveal-scale:not(.is-inview) {
+        transform: scale(0.95) translateY(18px);
+      }
+    }
+  </style>
+</head>
+<body class="bg-linen text-ink font-sans antialiased overflow-x-hidden selection:bg-ink selection:text-linen">
+
+  <!-- ==========================================
+       TOP FLOATING EDITORIAL NAVIGATION
+       (Fully Visible and Responsive)
+       ========================================== -->
+  <header class="fixed top-0 left-0 right-0 z-50 pt-4 sm:pt-6 px-4 sm:px-8 pointer-events-none transition-all duration-300" id="mainHeader">
+    <div class="max-w-[1600px] mx-auto flex items-center justify-between pointer-events-auto">
+      
+      <!-- Brand Logo / Wordmark -->
+      <a href="index.html" class="flex items-center gap-2 group bg-ivory/90 backdrop-blur-md px-5 py-3 rounded-full border border-borderHairline shadow-sm hover:bg-ivory transition-colors">
+        <span class="font-serif text-2xl sm:text-3xl font-medium tracking-tight text-ink group-hover:text-stoneTaupe transition-colors">DA STUDIOS</span>
+        <span class="hidden sm:inline-flex items-center text-[9px] font-mono tracking-widest text-warmSand uppercase pl-1 border-l border-ink/15">
+          <span class="live-dot mr-1.5"></span>VADODARA
+        </span>
+      </a>
+
+      <!-- Center Floating Pill Navigation -->
+      <nav class="hidden md:flex items-center gap-1 sm:gap-2 bg-stoneTaupe/95 text-linen/95 backdrop-blur-md px-4 py-2 rounded-full shadow-lg border border-white/10 text-xs font-sans tracking-wide">
+        <a href="#about" class="px-4 py-2 rounded-full hover:bg-white/15 hover:text-white transition-all">ABOUT</a>
+        <a href="#portfolio" class="px-4 py-2 rounded-full hover:bg-white/15 hover:text-white transition-all">PORTFOLIO</a>
+        <a href="#simulation" class="px-4 py-2 rounded-full hover:bg-white/15 hover:text-white transition-all">REALITY VS BIM</a>
+        <a href="#materials" class="px-4 py-2 rounded-full hover:bg-white/15 hover:text-white transition-all">MATERIALITY</a>
+        <a href="#specifier" class="px-4 py-2 rounded-full hover:bg-white/15 hover:text-white transition-all">SPECIFIER</a>
+      </nav>
+
+      <!-- Right Action Pill -->
+      <div class="flex items-center gap-3">
+        <a href="#commission" class="interactive-btn hidden sm:inline-flex items-center gap-2 bg-ink text-linen hover:bg-espresso text-xs font-sans tracking-wide px-5 py-3 rounded-full shadow-sm transition-all hover:shadow-md">
+          <span>Get Your Design</span>
+          <i class="fa-solid fa-arrow-right text-[10px]"></i>
+        </a>
+        
+        <!-- Mobile Menu Trigger -->
+        <button id="mobileMenuBtn" aria-label="Toggle Navigation" class="md:hidden w-11 h-11 rounded-full bg-stoneTaupe text-linen flex items-center justify-center shadow-md active:scale-95 transition-transform">
+          <i class="fa-solid fa-bars-staggered text-sm"></i>
+        </button>
+      </div>
+
+    </div>
+
+    <!-- Mobile Drawer -->
+    <div id="mobileMenuDrawer" class="hidden md:hidden pointer-events-auto mt-3 mx-2 p-6 rounded-3xl bg-ivory border border-borderHairline shadow-2xl space-y-4">
+      <div class="flex flex-col space-y-3 font-serif text-xl text-ink">
+        <a href="#about" class="mobile-nav-link py-1 hover:text-stoneTaupe">01. About Atelier</a>
+        <a href="#portfolio" class="mobile-nav-link py-1 hover:text-stoneTaupe">02. Selected Portfolio</a>
+        <a href="#simulation" class="mobile-nav-link py-1 hover:text-stoneTaupe">03. Simulation vs Built</a>
+        <a href="#materials" class="mobile-nav-link py-1 hover:text-stoneTaupe">04. Materiality & Craft</a>
+        <a href="#specifier" class="mobile-nav-link py-1 hover:text-stoneTaupe">05. Feasibility Specifier</a>
+        <a href="#commission" class="mobile-nav-link py-1 hover:text-stoneTaupe">06. Commission Brief</a>
+      </div>
+      <div class="pt-3 border-t border-borderHairline flex flex-wrap gap-2 text-xs font-mono text-warmSand uppercase">
+        <a href="portfolio.html" class="hover:text-ink">Portfolio Archive ↗</a>
+        <a href="services.html" class="hover:text-ink">Services & Specifier ↗</a>
+        <a href="about.html" class="hover:text-ink">Philosophy ↗</a>
+        <a href="contact.html" class="hover:text-ink">Contact ↗</a>
+      </div>
+      <div class="pt-2 border-t border-borderHairline flex justify-between items-center text-xs font-mono text-warmSand">
+        <span>TEL: +91 88494 10398</span>
+        <span>ALKAPURI, VADODARA</span>
+      </div>
+    </div>
+  </header>
+
+
+  <!-- ==========================================
+       SECTION 1: HERO SECTION
+       (Fluid Cinematic Keyframe Animations, 100% Fail-Safe)
+       ========================================== -->
+  <section id="heroSection" class="pt-20 sm:pt-36 pb-8 sm:pb-24 px-4 sm:px-8 max-w-[1600px] mx-auto overflow-hidden">
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-5 sm:gap-8 lg:gap-12 items-start">
+
+      <!-- LEFT COLUMN: Top 3 Cards + Display Title + Subtitle -->
+      <div class="lg:col-span-7 flex flex-col justify-between space-y-4 sm:space-y-12">
+        
+        <!-- Row of 3 Rounded Detail Visuals (Inspired by Reference Top-Left) -->
+        <div class="grid grid-cols-3 gap-2 sm:gap-5">
+          
+          <div class="anim-hero-thumb-1 hover-lift-card aspect-[16/11] sm:aspect-[4/3] rounded-xl sm:rounded-3xl img-zoom-card shadow-sm border border-borderHairline bg-travertine cursor-pointer">
+            <img 
+              src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=700&q=80" 
+              alt="Sculptural travertine dining and living pavilion" 
+              class="w-full h-full object-cover"
+            />
+          </div>
+
+          <div class="anim-hero-thumb-2 hover-lift-card aspect-[16/11] sm:aspect-[4/3] rounded-xl sm:rounded-3xl img-zoom-card shadow-sm border border-borderHairline bg-travertine cursor-pointer">
+            <img 
+              src="https://images.unsplash.com/photo-1590402494682-cd3fb53b1f70?auto=format&fit=crop&w=700&q=80" 
+              alt="Raw block Navona travertine monolithic island console" 
+              class="w-full h-full object-cover"
+            />
+          </div>
+
+          <div class="anim-hero-thumb-3 hover-lift-card aspect-[16/11] sm:aspect-[4/3] rounded-xl sm:rounded-3xl img-zoom-card shadow-sm border border-borderHairline bg-travertine cursor-pointer">
+            <img 
+              src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=700&q=80" 
+              alt="Sunlit courtyard villa dining with expansive glass fenestration" 
+              class="w-full h-full object-cover"
+            />
+          </div>
+
+        </div>
+
+        <!-- High-Fashion Editorial Headline & Subtitle -->
+        <div class="space-y-3 sm:space-y-6 pt-1 sm:pt-2">
+          
+          <div class="relative">
+            <h1 class="hero-display-title font-serif font-light text-ink">
+              <span class="block anim-hero-title-1">Future</span>
+              <span class="inline-flex items-center gap-2 sm:gap-6 anim-hero-title-2 flex-wrap">
+                <span class="italic font-normal">Interior</span>
+                <span class="anim-hero-tag text-[8px] sm:text-xs font-mono tracking-wider sm:tracking-widest text-warmSand uppercase px-2 sm:px-3 py-0.5 sm:py-1.5 rounded-full border border-borderHairline bg-ivory shadow-xs inline-flex items-center">
+                  <span class="live-dot mr-1 sm:mr-1.5"></span>PREMIUM ATELIER
+                </span>
+              </span>
+            </h1>
+            <div class="w-full h-[1px] bg-ink/15 mt-3 sm:mt-8 anim-hero-divider"></div>
+          </div>
+
+          <!-- Grounded Architectural Sub-Heading -->
+          <div class="anim-hero-sub flex flex-col sm:flex-row sm:items-center justify-between gap-1 sm:gap-4 font-mono text-[9px] sm:text-xs tracking-[0.14em] sm:tracking-[0.25em] text-warmSand uppercase pt-0.5 sm:pt-2">
+            <span>SPACES FOR A BESPOKE TOMORROW</span>
+            <span class="hidden sm:inline text-ink/20">•</span>
+            <span>ALKAPURI / VADODARA</span>
+          </div>
+
+        </div>
+
+        <!-- Locality Badges -->
+        <div class="anim-hero-pills pt-0 sm:pt-4 flex flex-wrap gap-1.5 sm:gap-2 text-[10px] sm:text-xs font-sans text-ink/75">
+          <span class="hover-lift-card px-2.5 sm:px-4 py-1 sm:py-2 rounded-full bg-travertine/70 border border-borderHairline cursor-default">Private Estates in Bhayli</span>
+          <span class="hover-lift-card px-2.5 sm:px-4 py-1 sm:py-2 rounded-full bg-travertine/70 border border-borderHairline cursor-default">Sevasi Road Sanctuaries</span>
+          <span class="hover-lift-card px-2.5 sm:px-4 py-1 sm:py-2 rounded-full bg-travertine/70 border border-borderHairline cursor-default">Alkapuri Sky Duplexes</span>
+        </div>
+
+      </div>
+
+      <!-- RIGHT COLUMN: Giant Rounded Hero Visual + Floating Frosted Card -->
+      <div class="lg:col-span-5 relative mt-2 lg:mt-0">
+        
+        <!-- Tall Rounded Hero Main Container -->
+        <div class="anim-hero-main relative w-full h-[380px] sm:h-auto sm:aspect-[3/4] lg:aspect-[4/5] rounded-3xl sm:rounded-[48px] img-zoom-card shadow-2xl border border-borderHairline overflow-hidden bg-parchment">
+          <img 
+            id="heroMainVisual"
+            src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1600&q=85" 
+            alt="Double-height architectural residence designed by DA STUDIOS" 
+            class="w-full h-full object-cover object-center"
+          />
+
+          <!-- Ambient Gradient Vignette -->
+          <div class="absolute inset-0 bg-gradient-to-t from-ink/70 via-transparent to-transparent pointer-events-none"></div>
+
+          <!-- Floating Frosted Content Card -->
+          <div class="anim-hero-floating hover-lift-card absolute bottom-3 left-3 right-3 sm:bottom-8 sm:left-8 sm:right-8 bg-stoneTaupe/95 backdrop-blur-xl rounded-2xl sm:rounded-3xl p-3.5 sm:p-7 border border-white/20 text-linen shadow-2xl">
+            
+            <a href="#specifier" class="interactive-btn inline-flex items-center gap-2 bg-ivory text-ink hover:bg-linen font-sans font-medium text-[11px] sm:text-sm px-3.5 sm:px-6 py-1.5 sm:py-3 rounded-full shadow-md transition-transform mb-2 sm:mb-4">
+              <span>Get your design</span>
+              <i class="fa-solid fa-arrow-right text-[9px] sm:text-[11px]"></i>
+            </a>
+
+            <p class="text-[11px] sm:text-sm text-linen/90 font-light leading-snug sm:leading-relaxed line-clamp-2 sm:line-clamp-none">
+              We work with private residential estates and turnkey living of any scale, from Alkapuri duplex penthouses to bespoke Bhayli bungalows.
+            </p>
+
+            <div class="mt-2 sm:mt-4 pt-2 sm:pt-3 border-t border-white/15 flex items-center justify-between text-[9px] sm:text-[11px] font-mono text-linen/75">
+              <span>1:1 SITE FIDELITY</span>
+              <a href="tel:+918849410398" class="hover:text-white underline underline-offset-4">+91 88494 10398</a>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ==========================================
+       SECTION 2: ABOUT & DESIGNED STATISTICS
+       (Directly Visible with Real Numbers)
+       ========================================== -->
+  <section id="about" class="py-10 sm:py-28 px-4 sm:px-8 max-w-[1600px] mx-auto border-t border-borderHairline overflow-hidden">
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 sm:gap-10 lg:gap-14 items-center">
+
+      <!-- Left Column: 3 Stat Cards (Horizontal on Mobile, Stacked on Desktop) -->
+      <div class="lg:col-span-5 grid grid-cols-3 sm:grid-cols-1 gap-2.5 sm:gap-4 reveal-slide-left">
+        
+        <!-- Stat Card 01 -->
+        <div class="hover-lift-card bg-stoneTaupe text-linen rounded-2xl sm:rounded-3xl p-3 sm:p-8 flex flex-col sm:flex-row sm:items-center justify-between shadow-md border border-white/10 hover:bg-clayDark transition-colors">
+          <div>
+            <div class="font-serif text-2xl sm:text-5xl font-light tracking-tight">
+              <span class="counter-number" data-target="12">12</span>
+            </div>
+            <div class="text-[10px] sm:text-sm text-linen/80 font-light mt-0.5 leading-tight">years of dedicated atelier practice</div>
+          </div>
+          <div class="hidden sm:flex w-12 h-12 rounded-2xl bg-white/10 items-center justify-center text-linen text-lg">
+            <i class="fa-solid fa-house-chimney"></i>
+          </div>
+        </div>
+
+        <!-- Stat Card 02 -->
+        <div class="hover-lift-card bg-stoneTaupe text-linen rounded-2xl sm:rounded-3xl p-3 sm:p-8 flex flex-col sm:flex-row sm:items-center justify-between shadow-md border border-white/10 hover:bg-clayDark transition-colors">
+          <div>
+            <div class="font-serif text-2xl sm:text-5xl font-light tracking-tight">
+              <span class="counter-number" data-target="45">45</span>+
+            </div>
+            <div class="text-[10px] sm:text-sm text-linen/80 font-light mt-0.5 leading-tight">curated residences delivered</div>
+          </div>
+          <div class="hidden sm:flex w-12 h-12 rounded-2xl bg-white/10 items-center justify-center text-linen text-lg">
+            <i class="fa-solid fa-city"></i>
+          </div>
+        </div>
+
+        <!-- Stat Card 03 -->
+        <div class="hover-lift-card bg-stoneTaupe text-linen rounded-2xl sm:rounded-3xl p-3 sm:p-8 flex flex-col sm:flex-row sm:items-center justify-between shadow-md border border-white/10 hover:bg-clayDark transition-colors">
+          <div>
+            <div class="font-serif text-2xl sm:text-5xl font-light tracking-tight">
+              <span class="counter-number" data-target="100">100</span>%
+            </div>
+            <div class="text-[10px] sm:text-sm text-linen/80 font-light mt-0.5 leading-tight">BIM-to-site joinery alignment</div>
+          </div>
+          <div class="hidden sm:flex w-12 h-12 rounded-2xl bg-white/10 items-center justify-center text-linen text-lg">
+            <i class="fa-solid fa-compass-drafting"></i>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Right Column: Editorial "About" Content + Overlapping Rounded Tall Visual -->
+      <div class="lg:col-span-7 grid grid-cols-1 sm:grid-cols-12 gap-6 sm:gap-8 items-center">
+        
+        <!-- Text Block (Slides in from Right) -->
+        <div class="sm:col-span-7 space-y-4 sm:space-y-6 reveal-slide-right delay-1">
+          <span class="text-[10px] sm:text-xs font-mono tracking-[0.2em] sm:tracking-[0.25em] text-warmSand uppercase block">PHILOSOPHY & CRAFT</span>
+          <h2 class="section-huge-title font-serif font-light text-ink">
+            About
+          </h2>
+          <p class="text-xs sm:text-base text-ink/80 font-light leading-relaxed">
+            We do not follow templates; we create them. Our architects listen to your spatial habits, study the Central Gujarat solar path, and turn raw mineral ideas into quiet, monolithic solutions for generations.
+          </p>
+          <div class="w-full h-[1px] bg-ink/15 pt-1 sm:pt-2 expand-line delay-2"></div>
+          
+          <div class="pt-1 sm:pt-2">
+            <a href="about.html" class="interactive-btn inline-flex items-center gap-2.5 sm:gap-3 font-mono text-[11px] sm:text-xs tracking-widest uppercase text-ink hover:text-stoneTaupe transition-colors group">
+              <span class="border-b border-ink group-hover:border-stoneTaupe pb-0.5">LEARN MORE</span>
+              <div class="w-7 h-7 sm:w-8 sm:h-8 rounded-full border border-ink group-hover:border-stoneTaupe flex items-center justify-center transition-all group-hover:translate-x-1">
+                <i class="fa-solid fa-arrow-right text-[9px] sm:text-[10px]"></i>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <!-- Overlapping Rounded Image Card (Proper 16:10 on mobile, 3:4 on PC) -->
+        <div class="sm:col-span-5 reveal-scale delay-3">
+          <div class="aspect-[16/10] sm:aspect-[3/4] rounded-2xl sm:rounded-[36px] img-zoom-card hover-lift-card shadow-lg border border-borderHairline overflow-hidden bg-parchment">
+            <img 
+              src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=800&q=80" 
+              alt="Sunlit minimalist hallway and biophilic living corridor" 
+              class="w-full h-full object-cover"
+            />
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ==========================================
+       CONTINUOUS HORIZONTAL MARQUEE
+       ========================================== -->
+  <div class="py-5 border-y border-borderHairline overflow-hidden bg-ivory/60 select-none">
+    <div class="marquee-track flex whitespace-nowrap gap-12 font-serif text-lg sm:text-2xl text-ink/65 tracking-wide font-light">
+      <span>BESPOKE ARCHITECTURE</span>
+      <span class="text-stoneTaupe italic">•</span>
+      <span>TURNKEY RESIDENCES</span>
+      <span class="text-stoneTaupe italic">•</span>
+      <span>1:1 BIM SITE FIDELITY</span>
+      <span class="text-stoneTaupe italic">•</span>
+      <span>NAVONA TRAVERTINE</span>
+      <span class="text-stoneTaupe italic">•</span>
+      <span>ALKAPURI ATELIER</span>
+      <span class="text-stoneTaupe italic">•</span>
+      <span>PRIVATE ESTATES IN BHAYLI & SEVASI</span>
+      <span class="text-stoneTaupe italic">•</span>
+      <span>SMOKED OAK MILLWORK</span>
+      <span class="text-stoneTaupe italic">•</span>
+      <span>BESPOKE ARCHITECTURE</span>
+      <span class="text-stoneTaupe italic">•</span>
+      <span>TURNKEY RESIDENCES</span>
+      <span class="text-stoneTaupe italic">•</span>
+      <span>1:1 BIM SITE FIDELITY</span>
+      <span class="text-stoneTaupe italic">•</span>
+      <span>NAVONA TRAVERTINE</span>
+      <span class="text-stoneTaupe italic">•</span>
+      <span>ALKAPURI ATELIER</span>
+      <span class="text-stoneTaupe italic">•</span>
+    </div>
+  </div>
+
+
+  <!-- ==========================================
+       SECTION 3: PORTFOLIO SHOWCASE
+       (Matching Reference InStudio: Massive Rounded Container,
+        Horizontal Project Carousel, Filter Pills, See all ->)
+       ========================================== -->
+  <section id="portfolio" class="px-3 sm:px-6 py-12 sm:py-20 max-w-[1640px] mx-auto">
+    <div class="bg-stoneTaupe text-linen rounded-3xl sm:rounded-6xl p-5 sm:p-12 lg:p-16 shadow-2xl relative overflow-hidden reveal-scale">
+      
+      <!-- Top Row: Giant "Portfolio" Title + Controls -->
+      <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-6 pb-6 sm:pb-14 border-b border-white/15">
+        
+        <div class="reveal-slide-left">
+          <span class="text-[10px] sm:text-xs font-mono tracking-[0.2em] sm:tracking-[0.25em] text-linen/60 uppercase block mb-1 sm:mb-2">01 / SELECTED COMMISSIONS</span>
+          <h2 class="font-serif text-3xl sm:text-7xl lg:text-8xl font-light tracking-tight text-linen">
+            Portfolio
+          </h2>
+        </div>
+
+        <div class="flex flex-wrap items-center justify-between sm:justify-end gap-3 sm:gap-4 reveal-slide-right delay-1 w-full sm:w-auto">
+          
+          <!-- Category Filter Pills (Scrollable on mobile) -->
+          <div class="flex items-center gap-1.5 sm:gap-2 bg-black/20 backdrop-blur-md p-1 sm:p-1.5 rounded-full text-[11px] sm:text-xs font-sans overflow-x-auto no-scrollbar max-w-full">
+            <button onclick="filterPortfolio('all', this)" class="port-filter-btn px-3 sm:px-4 py-1.5 rounded-full bg-ivory text-ink font-medium transition-all">All [06]</button>
+            <button onclick="filterPortfolio('bhayli', this)" class="port-filter-btn px-3 sm:px-4 py-1.5 rounded-full text-linen hover:bg-white/10 transition-all">Bhayli</button>
+            <button onclick="filterPortfolio('alkapuri', this)" class="port-filter-btn px-3 sm:px-4 py-1.5 rounded-full text-linen hover:bg-white/10 transition-all">Alkapuri</button>
+            <button onclick="filterPortfolio('sevasi', this)" class="port-filter-btn px-3 sm:px-4 py-1.5 rounded-full text-linen hover:bg-white/10 transition-all">Sevasi</button>
+          </div>
+
+          <!-- "See all ->" Pill Button -->
+          <a href="portfolio.html" class="interactive-btn inline-flex items-center gap-2 bg-ivory text-ink hover:bg-linen px-3.5 sm:px-5 py-1.5 sm:py-2.5 rounded-full text-[11px] sm:text-xs font-sans font-medium transition-all shadow-md ml-auto sm:ml-0">
+            <span>See all</span>
+            <i class="fa-solid fa-arrow-right text-[10px]"></i>
+          </a>
+
+          <!-- Carousel Arrow Buttons -->
+          <div class="hidden sm:flex items-center gap-2 pl-2">
+            <button onclick="scrollPortfolioCarousel(-1)" aria-label="Previous Project" class="w-10 h-10 rounded-full bg-ivory text-ink hover:bg-linen flex items-center justify-center shadow-md transition-transform active:scale-95">
+              <i class="fa-solid fa-arrow-left text-xs"></i>
+            </button>
+            <button onclick="scrollPortfolioCarousel(1)" aria-label="Next Project" class="w-10 h-10 rounded-full bg-ivory text-ink hover:bg-linen flex items-center justify-center shadow-md transition-transform active:scale-95">
+              <i class="fa-solid fa-arrow-right text-xs"></i>
+            </button>
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- Horizontal Project Cards Carousel -->
+      <div class="pt-6 sm:pt-10 overflow-x-auto no-scrollbar scroll-smooth flex gap-3.5 sm:gap-8 pb-4 snap-x snap-mandatory" id="portfolioScrollContainer">
+        
+        <!-- Card 01 -->
+        <div class="portfolio-item-card hover-lift-card reveal-slide-right delay-1 bhayli min-w-[70vw] sm:min-w-[340px] lg:min-w-[370px] snap-center flex-1 group cursor-pointer" onclick="openArchiveDrawer(0)">
+          <div class="aspect-[16/11] sm:aspect-[4/5] rounded-2xl sm:rounded-4xl img-zoom-card shadow-lg overflow-hidden bg-black/20 border border-white/10 mb-3 sm:mb-5 relative">
+            <img 
+              src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=900&q=80" 
+              alt="The Courtyard Pavilion, Bhayli" 
+              class="w-full h-full object-cover"
+            />
+            <div class="absolute top-2.5 right-2.5 sm:top-4 sm:right-4 bg-ink/75 backdrop-blur-md text-linen text-[8px] sm:text-[10px] font-mono px-2 sm:px-3 py-0.5 sm:py-1 rounded-full uppercase">
+              BHAYLI / 9,500 SQ.FT
+            </div>
+            <div class="absolute bottom-2.5 right-2.5 sm:bottom-4 sm:right-4 w-7 h-7 sm:w-9 sm:h-9 rounded-full bg-ivory text-ink flex items-center justify-center opacity-90 sm:opacity-0 sm:group-hover:opacity-100 transition-all translate-y-0 sm:translate-y-2 sm:group-hover:translate-y-0 shadow-lg">
+              <i class="fa-solid fa-arrow-up-right-from-square text-[10px] sm:text-xs"></i>
+            </div>
+          </div>
+          <div>
+            <h3 class="font-serif text-lg sm:text-3xl font-light text-linen group-hover:underline underline-offset-4">Residential Pavilion</h3>
+            <p class="text-[11px] sm:text-sm text-linen/75 font-light mt-0.5 sm:mt-1">Central evaporative water court & travertine.</p>
+          </div>
+        </div>
+
+        <!-- Card 02 -->
+        <div class="portfolio-item-card hover-lift-card reveal-slide-right delay-2 alkapuri min-w-[70vw] sm:min-w-[340px] lg:min-w-[370px] snap-center flex-1 group cursor-pointer" onclick="openArchiveDrawer(1)">
+          <div class="aspect-[16/11] sm:aspect-[4/5] rounded-2xl sm:rounded-4xl img-zoom-card shadow-lg overflow-hidden bg-black/20 border border-white/10 mb-3 sm:mb-5 relative">
+            <img 
+              src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=900&q=80" 
+              alt="Sky Sanctuary Duplex, Alkapuri" 
+              class="w-full h-full object-cover"
+            />
+            <div class="absolute top-2.5 right-2.5 sm:top-4 sm:right-4 bg-ink/75 backdrop-blur-md text-linen text-[8px] sm:text-[10px] font-mono px-2 sm:px-3 py-0.5 sm:py-1 rounded-full uppercase">
+              ALKAPURI / 6,200 SQ.FT
+            </div>
+            <div class="absolute bottom-2.5 right-2.5 sm:bottom-4 sm:right-4 w-7 h-7 sm:w-9 sm:h-9 rounded-full bg-ivory text-ink flex items-center justify-center opacity-90 sm:opacity-0 sm:group-hover:opacity-100 transition-all translate-y-0 sm:translate-y-2 sm:group-hover:translate-y-0 shadow-lg">
+              <i class="fa-solid fa-arrow-up-right-from-square text-[10px] sm:text-xs"></i>
+            </div>
+          </div>
+          <div>
+            <h3 class="font-serif text-lg sm:text-3xl font-light text-linen group-hover:underline underline-offset-4">Sky Sanctuary Duplex</h3>
+            <p class="text-[11px] sm:text-sm text-linen/75 font-light mt-0.5 sm:mt-1">Double-height Italian Statuario vertical slab wall.</p>
+          </div>
+        </div>
+
+        <!-- Card 03 -->
+        <div class="portfolio-item-card hover-lift-card reveal-slide-right delay-3 sevasi min-w-[70vw] sm:min-w-[340px] lg:min-w-[370px] snap-center flex-1 group cursor-pointer" onclick="openArchiveDrawer(2)">
+          <div class="aspect-[16/11] sm:aspect-[4/5] rounded-2xl sm:rounded-4xl img-zoom-card shadow-lg overflow-hidden bg-black/20 border border-white/10 mb-3 sm:mb-5 relative">
+            <img 
+              src="https://images.unsplash.com/photo-1600566753376-12c8ab7fb75b?auto=format&fit=crop&w=900&q=80" 
+              alt="The Monolith Estate, Sevasi" 
+              class="w-full h-full object-cover"
+            />
+            <div class="absolute top-2.5 right-2.5 sm:top-4 sm:right-4 bg-ink/75 backdrop-blur-md text-linen text-[8px] sm:text-[10px] font-mono px-2 sm:px-3 py-0.5 sm:py-1 rounded-full uppercase">
+              SEVASI / 12,000 SQ.FT
+            </div>
+            <div class="absolute bottom-2.5 right-2.5 sm:bottom-4 sm:right-4 w-7 h-7 sm:w-9 sm:h-9 rounded-full bg-ivory text-ink flex items-center justify-center opacity-90 sm:opacity-0 sm:group-hover:opacity-100 transition-all translate-y-0 sm:translate-y-2 sm:group-hover:translate-y-0 shadow-lg">
+              <i class="fa-solid fa-arrow-up-right-from-square text-[10px] sm:text-xs"></i>
+            </div>
+          </div>
+          <div>
+            <h3 class="font-serif text-lg sm:text-3xl font-light text-linen group-hover:underline underline-offset-4">The Monolith Estate</h3>
+            <p class="text-[11px] sm:text-sm text-linen/75 font-light mt-0.5 sm:mt-1">Board-marked concrete buffer & basalt lap pool.</p>
+          </div>
+        </div>
+
+        <!-- Card 04 -->
+        <div class="portfolio-item-card hover-lift-card reveal-slide-right delay-4 alkapuri min-w-[70vw] sm:min-w-[340px] lg:min-w-[370px] snap-center flex-1 group cursor-pointer" onclick="openArchiveDrawer(3)">
+          <div class="aspect-[16/11] sm:aspect-[4/5] rounded-2xl sm:rounded-4xl img-zoom-card shadow-lg overflow-hidden bg-black/20 border border-white/10 mb-3 sm:mb-5 relative">
+            <img 
+              src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=900&q=80" 
+              alt="Casa Travertino, Alkapuri" 
+              class="w-full h-full object-cover"
+            />
+            <div class="absolute top-2.5 right-2.5 sm:top-4 sm:right-4 bg-ink/75 backdrop-blur-md text-linen text-[8px] sm:text-[10px] font-mono px-2 sm:px-3 py-0.5 sm:py-1 rounded-full uppercase">
+              ALKAPURI / 4,800 SQ.FT
+            </div>
+            <div class="absolute bottom-2.5 right-2.5 sm:bottom-4 sm:right-4 w-7 h-7 sm:w-9 sm:h-9 rounded-full bg-ivory text-ink flex items-center justify-center opacity-90 sm:opacity-0 sm:group-hover:opacity-100 transition-all translate-y-0 sm:translate-y-2 sm:group-hover:translate-y-0 shadow-lg">
+              <i class="fa-solid fa-arrow-up-right-from-square text-[10px] sm:text-xs"></i>
+            </div>
+          </div>
+          <div>
+            <h3 class="font-serif text-lg sm:text-3xl font-light text-linen group-hover:underline underline-offset-4">Casa Travertino</h3>
+            <p class="text-[11px] sm:text-sm text-linen/75 font-light mt-0.5 sm:mt-1">Sculptural fluted lime-plaster corridors & smoked oak.</p>
+          </div>
+        </div>
+
+        <!-- Card 05 -->
+        <div class="portfolio-item-card hover-lift-card reveal-slide-right delay-5 alkapuri min-w-[70vw] sm:min-w-[340px] lg:min-w-[370px] snap-center flex-1 group cursor-pointer" onclick="openArchiveDrawer(4)">
+          <div class="aspect-[16/11] sm:aspect-[4/5] rounded-2xl sm:rounded-4xl img-zoom-card shadow-lg overflow-hidden bg-black/20 border border-white/10 mb-3 sm:mb-5 relative">
+            <img 
+              src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=900&q=80" 
+              alt="Aura Wellness Clinic, RC Dutt Road" 
+              class="w-full h-full object-cover"
+            />
+            <div class="absolute top-2.5 right-2.5 sm:top-4 sm:right-4 bg-ink/75 backdrop-blur-md text-linen text-[8px] sm:text-[10px] font-mono px-2 sm:px-3 py-0.5 sm:py-1 rounded-full uppercase">
+              RC DUTT / 3,800 SQ.FT
+            </div>
+            <div class="absolute bottom-2.5 right-2.5 sm:bottom-4 sm:right-4 w-7 h-7 sm:w-9 sm:h-9 rounded-full bg-ivory text-ink flex items-center justify-center opacity-90 sm:opacity-0 sm:group-hover:opacity-100 transition-all translate-y-0 sm:translate-y-2 sm:group-hover:translate-y-0 shadow-lg">
+              <i class="fa-solid fa-arrow-up-right-from-square text-[10px] sm:text-xs"></i>
+            </div>
+          </div>
+          <div>
+            <h3 class="font-serif text-lg sm:text-3xl font-light text-linen group-hover:underline underline-offset-4">Aura Wellness Clinic</h3>
+            <p class="text-[11px] sm:text-sm text-linen/75 font-light mt-0.5 sm:mt-1">Acoustic curved timber slats & seamless micro-terrazzo.</p>
+          </div>
+        </div>
+
+        <!-- Card 06 -->
+        <div class="portfolio-item-card hover-lift-card reveal-slide-right delay-6 bhayli min-w-[70vw] sm:min-w-[340px] lg:min-w-[370px] snap-center flex-1 group cursor-pointer" onclick="openArchiveDrawer(5)">
+          <div class="aspect-[16/11] sm:aspect-[4/5] rounded-2xl sm:rounded-4xl img-zoom-card shadow-lg overflow-hidden bg-black/20 border border-white/10 mb-3 sm:mb-5 relative">
+            <img 
+              src="https://images.unsplash.com/photo-1613490493576-7fde63acd811?auto=format&fit=crop&w=900&q=80" 
+              alt="The Glasshouse Villa, Gotri-Bhayli" 
+              class="w-full h-full object-cover"
+            />
+            <div class="absolute top-2.5 right-2.5 sm:top-4 sm:right-4 bg-ink/75 backdrop-blur-md text-linen text-[8px] sm:text-[10px] font-mono px-2 sm:px-3 py-0.5 sm:py-1 rounded-full uppercase">
+              GOTRI / 7,400 SQ.FT
+            </div>
+            <div class="absolute bottom-2.5 right-2.5 sm:bottom-4 sm:right-4 w-7 h-7 sm:w-9 sm:h-9 rounded-full bg-ivory text-ink flex items-center justify-center opacity-90 sm:opacity-0 sm:group-hover:opacity-100 transition-all translate-y-0 sm:translate-y-2 sm:group-hover:translate-y-0 shadow-lg">
+              <i class="fa-solid fa-arrow-up-right-from-square text-[10px] sm:text-xs"></i>
+            </div>
+          </div>
+          <div>
+            <h3 class="font-serif text-lg sm:text-3xl font-light text-linen group-hover:underline underline-offset-4">The Glasshouse Villa</h3>
+            <p class="text-[11px] sm:text-sm text-linen/75 font-light mt-0.5 sm:mt-1">Engineered Schuco glass envelopes & wire-brushed teak.</p>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Footnote Annotation in Container -->
+      <div class="pt-6 mt-4 border-t border-white/15 flex flex-col sm:flex-row justify-between items-center text-xs font-mono text-linen/70 gap-2">
+        <span>CLICK ANY SPECIFICATION PLATE TO INSPECT MATERIALS & BLUEPRINT NARRATIVE</span>
+        <span>ATELIER ARCHIVE 2024 - 2026</span>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ==========================================
+       SECTION 4: GIANT WATERMARK TYPOGRAPHY & OVERLAPPING TILES
+       ========================================== -->
+  <section class="py-10 sm:py-36 px-4 sm:px-8 max-w-[1600px] mx-auto relative overflow-hidden" id="materials">
+    
+    <!-- Giant Background Watermark Serif Text -->
+    <div id="watermarkText" class="watermark-text font-serif font-light text-ink/[0.04] text-center select-none tracking-wider transition-transform duration-700 ease-out">
+      DA STUDIOS
+    </div>
+
+    <!-- Overlapping Floating Rounded Cards Cutting Across Typography -->
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-8 -mt-6 sm:-mt-28 relative z-10">
+      
+      <!-- Overlapping Card 1 (Slides from Left) -->
+      <div class="reveal-slide-left hover-lift-card rounded-2xl sm:rounded-4xl img-zoom-card shadow-xl border border-borderHairline bg-ivory p-3.5 sm:p-5 space-y-3 sm:space-y-4 transition-all">
+        <div class="aspect-[16/10] sm:aspect-[16/11] rounded-xl sm:rounded-3xl overflow-hidden bg-travertine">
+          <img 
+            src="https://images.unsplash.com/photo-1546484396-fb3fc6f95f98?auto=format&fit=crop&w=800&q=80" 
+            alt="Wire-brushed smoked oak joinery" 
+            class="w-full h-full object-cover"
+          />
+        </div>
+        <div class="px-1 sm:px-2 pb-1 sm:pb-2">
+          <span class="text-[9px] sm:text-[10px] font-mono text-warmSand uppercase tracking-widest block">JOINERY CRAFT</span>
+          <h4 class="font-serif text-lg sm:text-2xl text-ink font-normal mt-0.5">Wire-Brushed Smoked Oak</h4>
+          <p class="text-[11px] sm:text-xs text-ink/75 font-light mt-1 sm:mt-1.5 leading-relaxed">Continuous concealed wardrobes and fluted wall cladding crafted in-house at our Alkapuri workshop.</p>
+        </div>
+      </div>
+
+      <!-- Overlapping Card 2 (Elevates Up with Asymmetry) -->
+      <div class="reveal-fade-up delay-1 hover-lift-card rounded-2xl sm:rounded-4xl img-zoom-card shadow-xl border border-borderHairline bg-ivory p-3.5 sm:p-5 space-y-3 sm:space-y-4 md:translate-y-8 transition-all">
+        <div class="aspect-[16/10] sm:aspect-[16/11] rounded-xl sm:rounded-3xl overflow-hidden bg-travertine">
+          <img 
+            src="https://images.unsplash.com/photo-1590402494682-cd3fb53b1f70?auto=format&fit=crop&w=800&q=80" 
+            alt="Direct Italian Navona Travertine" 
+            class="w-full h-full object-cover"
+          />
+        </div>
+        <div class="px-1 sm:px-2 pb-1 sm:pb-2">
+          <span class="text-[9px] sm:text-[10px] font-mono text-warmSand uppercase tracking-widest block">STONE PROVENANCE</span>
+          <h4 class="font-serif text-lg sm:text-2xl text-ink font-normal mt-0.5">Navona Travertine Dry-Lay</h4>
+          <p class="text-[11px] sm:text-xs text-ink/75 font-light mt-1.5 leading-relaxed">Hand-inspected at Kishangarh before cutting; natural void fillings offer thermal coolness underfoot.</p>
+        </div>
+      </div>
+
+      <!-- Overlapping Card 3 (Slides from Right) -->
+      <div class="reveal-slide-right delay-2 hover-lift-card rounded-2xl sm:rounded-4xl img-zoom-card shadow-xl border border-borderHairline bg-ivory p-3.5 sm:p-5 space-y-3 sm:space-y-4 transition-all">
+        <div class="aspect-[16/10] sm:aspect-[16/11] rounded-xl sm:rounded-3xl overflow-hidden bg-travertine">
+          <img 
+            src="https://images.unsplash.com/photo-1579783902614-a3fb3927b675?auto=format&fit=crop&w=800&q=80" 
+            alt="Artisanal slaked lime plaster finish" 
+            class="w-full h-full object-cover"
+          />
+        </div>
+        <div class="px-1 sm:px-2 pb-1 sm:pb-2">
+          <span class="text-[9px] sm:text-[10px] font-mono text-warmSand uppercase tracking-widest block">MINERAL COATINGS</span>
+          <h4 class="font-serif text-lg sm:text-2xl text-ink font-normal mt-0.5">Artisanal Slaked Lime Plaster</h4>
+          <p class="text-[11px] sm:text-xs text-ink/75 font-light mt-1.5 leading-relaxed">Multi-pass troweled mineral surfaces that diffuse intense Gujarat sunlight into soft ambient light.</p>
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- ==========================================
+       SECTION 5: SIMULATION VS BUILT CURTAIN
+       ========================================== -->
+  <section id="simulation" class="py-10 sm:py-28 px-4 sm:px-8 max-w-[1600px] mx-auto border-t border-borderHairline">
+    <div class="space-y-4 sm:space-y-10">
+      
+      <div class="flex flex-col md:flex-row md:items-end justify-between gap-3 sm:gap-6 pb-3 sm:pb-6 border-b border-borderHairline">
+        <div class="reveal-slide-left">
+          <span class="text-[10px] sm:text-xs font-mono tracking-[0.2em] sm:tracking-[0.25em] text-warmSand uppercase block mb-1 sm:mb-2">02 / UNCOMPROMISED REALITY</span>
+          <h2 class="section-huge-title font-serif font-light text-ink">
+            3D Simulation <span class="italic font-normal">versus</span> Built Reality
+          </h2>
+        </div>
+        <p class="reveal-slide-right delay-1 text-xs sm:text-sm font-sans text-ink/75 max-w-md leading-relaxed font-light">
+          High-end architecture often suffers from a gap between render and execution. Our unified BIM-to-site workflow achieves millimeter material alignment on completed Vadodara residences.
+        </p>
+      </div>
+
+      <!-- Comparison Slider in Soft Rounded Container -->
+      <div class="max-w-6xl mx-auto reveal-scale delay-2">
+        <div class="relative w-full h-[260px] sm:h-[580px] md:h-[660px] rounded-2xl sm:rounded-5xl overflow-hidden border border-borderHairline shadow-2xl select-none bg-parchment" id="interactiveCurtain">
+          
+          <!-- Background: Actual Built Site Handover -->
+          <img 
+            src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1800&q=85" 
+            alt="Completed built interior in Vadodara by DA STUDIOS" 
+            class="absolute inset-0 w-full h-full object-cover pointer-events-none"
+          />
+          
+          <!-- Built Label (Bottom Right) -->
+          <div class="absolute bottom-2.5 right-2.5 sm:bottom-6 sm:right-6 z-20 px-2 sm:px-4 py-1 sm:py-2 bg-ink/80 backdrop-blur-md text-linen rounded-full font-mono text-[8px] sm:text-[10px] tracking-wider uppercase shadow-md">
+            AS-BUILT SITE EXECUTION
+          </div>
+
+          <!-- Foreground: 3D Visualization Render (Clipped) -->
+          <div class="absolute inset-0 overflow-hidden pointer-events-none z-10" id="curtainClippedView" style="width: 50%;">
+            <img 
+              src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=1800&q=85" 
+              alt="3D Visualization Render prior to construction" 
+              class="absolute inset-0 w-full h-full object-cover max-w-none"
+              id="curtainInnerImage"
+            />
+            <!-- Render Label (Bottom Left) -->
+            <div class="absolute bottom-2.5 left-2.5 sm:bottom-6 sm:left-6 z-20 px-2 sm:px-4 py-1 sm:py-2 bg-ivory/90 backdrop-blur-md text-ink rounded-full border border-borderHairline font-mono text-[8px] sm:text-[10px] tracking-wider uppercase shadow-md">
+              3D PARAMETRIC SIMULATION
+            </div>
+          </div>
+
+          <!-- Vertical Hairline Divider & Minimalist Handle -->
+          <div class="absolute top-0 bottom-0 z-30 pointer-events-none cursor-ew-resize flex items-center justify-center" id="curtainHandle" style="left: 50%;">
+            <div class="w-[2px] h-full bg-ivory shadow-sm"></div>
+            <div class="curtain-handle-pulse absolute w-9 h-9 sm:w-10 sm:h-10 rounded-full bg-ivory border border-ink/20 flex items-center justify-center text-ink text-[11px] sm:text-xs pointer-events-auto shadow-xl transition-transform hover:scale-110 active:scale-95">
+              <i class="fa-solid fa-arrows-left-right"></i>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="mt-2.5 sm:mt-4 flex flex-col sm:flex-row items-start sm:items-center justify-between text-[9px] sm:text-xs font-mono text-warmSand pt-2 sm:pt-3 border-t border-borderHairline gap-1 sm:gap-2">
+          <div>DRAG DIVIDER HORIZONTALLY TO INSPECT VEIN ALIGNMENT</div>
+          <div>LOCATION: SEVASI ROAD, VADODARA / PROVENANCE: NAVONA TRAVERTINE</div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ==========================================
+       SECTION 6: FEASIBILITY SPECIFIER & INVESTMENT MODELING
+       ========================================== -->
+  <section id="specifier" class="py-10 sm:py-28 px-4 sm:px-8 max-w-[1600px] mx-auto border-t border-borderHairline">
+    <div class="space-y-6 sm:space-y-12">
+      
+      <div class="max-w-3xl reveal-slide-left">
+        <span class="text-[10px] sm:text-xs font-mono tracking-[0.2em] sm:tracking-[0.25em] text-warmSand uppercase block mb-1 sm:mb-2">03 / FEASIBILITY SPECIFIER</span>
+        <h2 class="section-huge-title font-serif font-light text-ink">
+          Turnkey Investment & Timeline Modeling
+        </h2>
+        <p class="text-xs sm:text-sm text-ink/75 font-light mt-2 sm:mt-3 leading-relaxed">
+          Calibrated strictly to Vadodara construction costs, premium material imports, and complete turnkey joinery indices for 2026.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 sm:gap-8 items-start">
+        
+        <!-- Controls Column (7 cols) - Slides from Left -->
+        <div class="lg:col-span-7 bg-ivory rounded-2xl sm:rounded-4xl p-4 sm:p-10 border border-borderHairline shadow-sm space-y-5 sm:space-y-8 reveal-slide-left delay-1">
+          
+          <!-- Typology Selector -->
+          <div>
+            <label class="block text-[11px] sm:text-xs font-mono uppercase tracking-wider text-warmSand mb-2 sm:mb-3">
+              [01] Property Typology
+            </label>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-2.5 sm:gap-3" id="typologyGroup">
+              <button type="button" data-rate="3200" data-months="14" class="type-spec-btn active p-3 sm:p-4 text-left rounded-xl sm:rounded-2xl border border-ink bg-travertine transition-all">
+                <span class="font-serif text-base sm:text-lg text-ink block font-normal">Bespoke Bungalow</span>
+                <span class="font-mono text-[9px] sm:text-[10px] text-warmSand">G+2 Structure / Bhayli / Sevasi</span>
+              </button>
+              <button type="button" data-rate="2700" data-months="9" class="type-spec-btn p-3 sm:p-4 text-left rounded-xl sm:rounded-2xl border border-borderHairline bg-ivory hover:border-ink/50 transition-all">
+                <span class="font-serif text-base sm:text-lg text-ink block font-normal">Sky Penthouse / Duplex</span>
+                <span class="font-mono text-[9px] sm:text-[10px] text-warmSand">High-Rise / Alkapuri</span>
+              </button>
+              <button type="button" data-rate="2400" data-months="7" class="type-spec-btn p-3 sm:p-4 text-left rounded-xl sm:rounded-2xl border border-borderHairline bg-ivory hover:border-ink/50 transition-all">
+                <span class="font-serif text-base sm:text-lg text-ink block font-normal">4 / 5 BHK Luxury Flat</span>
+                <span class="font-mono text-[9px] sm:text-[10px] text-warmSand">Gated Community / Vasna-Bhayli</span>
+              </button>
+              <button type="button" data-rate="3600" data-months="6" class="type-spec-btn p-3 sm:p-4 text-left rounded-xl sm:rounded-2xl border border-borderHairline bg-ivory hover:border-ink/50 transition-all">
+                <span class="font-serif text-base sm:text-lg text-ink block font-normal">Commercial Atelier</span>
+                <span class="font-mono text-[9px] sm:text-[10px] text-warmSand">Executive Suite / Clinic</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Area Slider -->
+          <div>
+            <div class="flex justify-between items-baseline mb-2 sm:mb-3">
+              <label class="text-[11px] sm:text-xs font-mono uppercase tracking-wider text-warmSand">
+                [02] Built-up / Carpet Area
+              </label>
+              <div class="font-mono text-sm sm:text-base text-ink font-medium">
+                <span id="specAreaNumber">6,500</span> <span class="text-warmSand text-[10px] sm:text-xs">SQ.FT</span>
+              </div>
+            </div>
+            <input 
+              type="range" 
+              id="specAreaSlider" 
+              min="2000" 
+              max="15000" 
+              step="250" 
+              value="6500" 
+              class="w-full appearance-none cursor-pointer"
+            />
+            <div class="flex justify-between font-mono text-[9px] sm:text-[10px] text-warmSand mt-1.5 sm:mt-2">
+              <span>2,000 SQ.FT</span>
+              <span>7,500 SQ.FT (TYPICAL)</span>
+              <span>15,000 SQ.FT</span>
+            </div>
+          </div>
+
+          <!-- Scope -->
+          <div>
+            <label class="block text-[11px] sm:text-xs font-mono uppercase tracking-wider text-warmSand mb-2 sm:mb-3">
+              [03] Scope of Atelier Engagement
+            </label>
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-2 sm:gap-3" id="scopeSpecGroup">
+              <button type="button" data-multiplier="1.35" class="scope-spec-btn active p-2.5 sm:p-3 text-left rounded-xl sm:rounded-2xl border border-ink bg-travertine transition-all">
+                <span class="font-mono text-[11px] sm:text-xs text-ink block font-medium">Full Turnkey</span>
+                <span class="font-mono text-[9px] sm:text-[10px] text-warmSand">Architecture + Interiors</span>
+              </button>
+              <button type="button" data-multiplier="1.0" class="scope-spec-btn p-2.5 sm:p-3 text-left rounded-xl sm:rounded-2xl border border-borderHairline bg-ivory hover:border-ink/50 transition-all">
+                <span class="font-mono text-[11px] sm:text-xs text-ink block font-medium">Interior Fit-Out</span>
+                <span class="font-mono text-[9px] sm:text-[10px] text-warmSand">Bespoke Fit-Out Only</span>
+              </button>
+              <button type="button" data-multiplier="0.45" class="scope-spec-btn p-2.5 sm:p-3 text-left rounded-xl sm:rounded-2xl border border-borderHairline bg-ivory hover:border-ink/50 transition-all">
+                <span class="font-mono text-[11px] sm:text-xs text-ink block font-medium">BIM & Advisory</span>
+                <span class="font-mono text-[9px] sm:text-[10px] text-warmSand">Drawings & Supervision</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Finish Grade -->
+          <div>
+            <label class="block text-[11px] sm:text-xs font-mono uppercase tracking-wider text-warmSand mb-2 sm:mb-3">
+              [04] Finish Specification Grade
+            </label>
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-2 sm:gap-3" id="gradeSpecGroup">
+              <button type="button" data-multiplier="1.0" class="grade-spec-btn p-2.5 sm:p-3 text-left rounded-xl sm:rounded-2xl border border-borderHairline bg-ivory hover:border-ink/50 transition-all">
+                <span class="font-mono text-[11px] sm:text-xs text-ink block font-medium">Warm Minimal</span>
+                <span class="font-mono text-[9px] sm:text-[10px] text-warmSand">Engineered Surfaces</span>
+              </button>
+              <button type="button" data-multiplier="1.35" class="grade-spec-btn active p-2.5 sm:p-3 text-left rounded-xl sm:rounded-2xl border border-ink bg-travertine transition-all">
+                <span class="font-mono text-[11px] sm:text-xs text-ink block font-medium">Italian Prestige</span>
+                <span class="font-mono text-[9px] sm:text-[10px] text-warmSand">Direct Italian Slabs</span>
+              </button>
+              <button type="button" data-multiplier="1.75" class="grade-spec-btn p-2.5 sm:p-3 text-left rounded-xl sm:rounded-2xl border border-borderHairline bg-ivory hover:border-ink/50 transition-all">
+                <span class="font-mono text-[11px] sm:text-xs text-ink block font-medium">Bespoke Haute</span>
+                <span class="font-mono text-[9px] sm:text-[10px] text-warmSand">Custom Cast & Bronze</span>
+              </button>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Output Summary Card (5 cols, Sticky, Soft Taupe Background) - Slides from Right -->
+        <div class="lg:col-span-5 bg-stoneTaupe text-linen rounded-2xl sm:rounded-4xl p-5 sm:p-10 sticky top-28 shadow-2xl border border-white/10 space-y-4 sm:space-y-6 reveal-slide-right delay-2">
+          
+          <div class="flex justify-between items-baseline border-b border-white/20 pb-3 sm:pb-4 font-mono text-[11px] sm:text-xs">
+            <span class="text-linen/70 uppercase">FEASIBILITY REPORT</span>
+            <span class="font-medium text-linen">VADODARA 2026</span>
+          </div>
+
+          <div>
+            <span class="text-[9px] sm:text-[10px] font-mono text-linen/75 uppercase tracking-wider block">PROJECTED TOTAL INVESTMENT RANGE</span>
+            <div class="font-serif text-2xl sm:text-4xl lg:text-5xl text-linen font-light tracking-tight mt-1" id="specOutputCost">
+              ₹ 2.10 Cr to 2.45 Cr
+            </div>
+            <div class="font-mono text-[9px] sm:text-[10px] text-linen/60 mt-1.5 sm:mt-2">
+              *All-inclusive: Civil, joinery, imported stone, MEP & HVAC coordination.
+            </div>
+          </div>
+
+          <div class="grid grid-cols-2 gap-3 sm:gap-4 p-3 sm:p-4 rounded-xl sm:rounded-2xl bg-black/20 font-mono text-xs border border-white/10">
+            <div>
+              <span class="text-linen/60 text-[9px] sm:text-[10px] block">TURNKEY DELIVERY</span>
+              <span class="text-linen font-medium text-xs sm:text-sm" id="specOutputMonths">12 to 14 Months</span>
+            </div>
+            <div>
+              <span class="text-linen/60 text-[9px] sm:text-[10px] block">BOQ INTEGRITY</span>
+              <span class="text-linen font-medium text-xs sm:text-sm">Locked Prior to Build</span>
+            </div>
+          </div>
+
+          <div class="space-y-2 sm:space-y-3 font-mono text-[11px] sm:text-xs text-linen/80 pt-1 sm:pt-2">
+            <div class="flex items-center gap-2">
+              <span class="text-linen">•</span>
+              <span>Principal Architect weekly site supervision</span>
+            </div>
+            <div class="flex items-center gap-2">
+              <span class="text-linen">•</span>
+              <span>1:1 3D photorealistic walkthrough verification</span>
+            </div>
+            <div class="flex items-center gap-2">
+              <span class="text-linen">•</span>
+              <span>Dry-lay stone matching before installation</span>
+            </div>
+          </div>
+
+          <div class="pt-3 sm:pt-4 border-t border-white/20">
+            <a 
+              id="specWhatsAppLink" 
+              href="#" 
+              target="_blank" 
+              class="interactive-btn w-full py-3.5 sm:py-4 bg-ivory text-ink hover:bg-linen font-sans font-medium text-xs tracking-wider uppercase rounded-full flex items-center justify-center gap-2 shadow-lg transition-transform hover:scale-[1.02] active:scale-95"
+            >
+              <span>Transmit Feasibility to Atelier</span>
+              <i class="fa-solid fa-arrow-right text-[10px]"></i>
+            </a>
+            <div class="text-center font-mono text-[9px] sm:text-[10px] text-linen/60 mt-2 sm:mt-3">
+              Direct connection with Alkapuri Atelier Principal / +91 88494 10398
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ==========================================
+       SECTION 7: COMMISSION INQUIRY & ALKAPURI STUDIO
+       ========================================== -->
+  <section id="commission" class="py-10 sm:py-28 px-4 sm:px-8 max-w-[1600px] mx-auto border-t border-borderHairline">
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 sm:gap-10 lg:gap-14 items-start">
+      
+      <!-- Left: Consultation Brief Form (Slides from Left) -->
+      <div class="lg:col-span-7 bg-ivory rounded-2xl sm:rounded-4xl p-5 sm:p-12 border border-borderHairline shadow-sm space-y-5 sm:space-y-6 reveal-slide-left">
+        <div>
+          <span class="text-[10px] sm:text-xs font-mono tracking-[0.2em] sm:tracking-[0.25em] text-warmSand uppercase block mb-1 sm:mb-2">04 / INITIATE ENGAGEMENT</span>
+          <h2 class="font-serif text-2xl sm:text-5xl font-light text-ink">
+            Schedule an Atelier Consultation
+          </h2>
+          <p class="text-xs sm:text-sm text-ink/75 font-light mt-1.5 sm:mt-2 leading-relaxed">
+            Meet at our Vicenza House atelier in Alkapuri or arrange a private site evaluation for your plot in Bhayli, Sevasi, or Gotri.
+          </p>
+        </div>
+
+        <form id="editorialInquiryForm" class="space-y-4 sm:space-y-5">
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-5">
+            <div>
+              <label class="block font-mono text-[9px] sm:text-[10px] uppercase tracking-wider text-warmSand mb-1.5 sm:mb-2">Full Name *</label>
+              <input 
+                type="text" 
+                id="inqName" 
+                required 
+                placeholder="e.g. Dr. Hiren Amin" 
+                class="w-full px-4 py-2.5 sm:px-5 sm:py-3.5 bg-travertine/50 border border-borderHairline rounded-xl sm:rounded-2xl font-sans text-sm text-ink placeholder-warmSand/60 focus:outline-none focus:border-ink transition-colors"
+              />
+            </div>
+            <div>
+              <label class="block font-mono text-[9px] sm:text-[10px] uppercase tracking-wider text-warmSand mb-1.5 sm:mb-2">Telephone *</label>
+              <input 
+                type="tel" 
+                id="inqPhone" 
+                required 
+                placeholder="+91 98765 43210" 
+                class="w-full px-4 py-2.5 sm:px-5 sm:py-3.5 bg-travertine/50 border border-borderHairline rounded-xl sm:rounded-2xl font-sans text-sm text-ink placeholder-warmSand/60 focus:outline-none focus:border-ink transition-colors"
+              />
+            </div>
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-5">
+            <div>
+              <label class="block font-mono text-[9px] sm:text-[10px] uppercase tracking-wider text-warmSand mb-1.5 sm:mb-2">Vadodara Site Location *</label>
+              <select id="inqLocation" class="w-full px-4 py-2.5 sm:px-5 sm:py-3.5 bg-travertine/50 border border-borderHairline rounded-xl sm:rounded-2xl font-sans text-sm text-ink focus:outline-none focus:border-ink transition-colors">
+                <option value="Bhayli">Bhayli</option>
+                <option value="Sevasi">Sevasi / TP 1</option>
+                <option value="Alkapuri">Alkapuri / Race Course</option>
+                <option value="Gotri">Gotri / Vasna-Bhayli</option>
+                <option value="Akota">Akota / Old Padra Road</option>
+                <option value="Other">Other Region in Gujarat</option>
+              </select>
+            </div>
+            <div>
+              <label class="block font-mono text-[9px] sm:text-[10px] uppercase tracking-wider text-warmSand mb-1.5 sm:mb-2">Estimated Plot / Floor Area</label>
+              <input 
+                type="text" 
+                id="inqArea" 
+                placeholder="e.g. 7,500 sq.ft" 
+                class="w-full px-4 py-2.5 sm:px-5 sm:py-3.5 bg-travertine/50 border border-borderHairline rounded-xl sm:rounded-2xl font-sans text-sm text-ink placeholder-warmSand/60 focus:outline-none focus:border-ink transition-colors"
+              />
+            </div>
+          </div>
+
+          <div>
+            <label class="block font-mono text-[9px] sm:text-[10px] uppercase tracking-wider text-warmSand mb-1.5 sm:mb-2">Architectural Intent or Brief</label>
+            <textarea 
+              id="inqBrief" 
+              rows="3" 
+              placeholder="Orientation, family requirements, timeline expectations..." 
+              class="w-full px-4 py-2.5 sm:px-5 sm:py-3.5 bg-travertine/50 border border-borderHairline rounded-xl sm:rounded-2xl font-sans text-sm text-ink placeholder-warmSand/60 focus:outline-none focus:border-ink transition-colors"
+            ></textarea>
+          </div>
+
+          <button 
+            type="submit" 
+            class="interactive-btn w-full py-3.5 sm:py-4 bg-ink hover:bg-espresso text-linen font-sans font-medium text-xs tracking-widest uppercase rounded-full shadow-lg transition-transform hover:scale-[1.01] active:scale-95"
+          >
+            Submit Commission Brief
+          </button>
+        </form>
+
+        <div id="inqConfirmation" class="hidden p-3.5 sm:p-4 rounded-xl sm:rounded-2xl bg-travertine border border-ink font-mono text-[11px] sm:text-xs text-ink">
+          [RECEIVED] Thank you. Your commission brief has been recorded. Our Alkapuri atelier desk will contact you to confirm appointment times.
+        </div>
+      </div>
+
+      <!-- Right: Atelier Address & Vicenza House (Slides from Right) -->
+      <div class="lg:col-span-5 space-y-4 sm:space-y-6 reveal-slide-right delay-1">
+        
+        <div class="bg-ivory rounded-2xl sm:rounded-4xl p-5 sm:p-8 border border-borderHairline shadow-sm space-y-4 sm:space-y-6">
+          <div>
+            <span class="text-[10px] sm:text-xs font-mono tracking-widest text-warmSand uppercase block mb-1">ATELIER HEADQUARTERS</span>
+            <h3 class="font-serif text-2xl sm:text-3xl text-ink font-normal">Vicenza House, Alkapuri</h3>
+          </div>
+
+          <div class="space-y-3 sm:space-y-4 font-mono text-xs text-ink/80 leading-relaxed border-t border-borderHairline pt-4 sm:pt-6">
+            <div>
+              <span class="text-warmSand text-[9px] sm:text-[10px] block">ADDRESS</span>
+              <span class="text-ink">
+                Vicenza House 21, Friends Society, <br>
+                Opposite CH Jewellers, Alkapuri, <br>
+                Vadodara, Gujarat 390007
+              </span>
+            </div>
+
+            <div>
+              <span class="text-warmSand text-[9px] sm:text-[10px] block">STUDIO TELEPHONE</span>
+              <a href="tel:+918849410398" class="text-ink underline hover:text-stoneTaupe">+91 88494 10398</a>
+            </div>
+
+            <div>
+              <span class="text-warmSand text-[9px] sm:text-[10px] block">DIRECT WHATSAPP CONCIERGE</span>
+              <a href="https://wa.me/918849410398" target="_blank" class="text-ink underline hover:text-stoneTaupe">+91 88494 10398</a>
+            </div>
+
+            <div>
+              <span class="text-warmSand text-[9px] sm:text-[10px] block">HOURS</span>
+              <span class="text-ink">Mon to Sat: 10:00 to 19:30 IST (By Prior Appointment)</span>
+            </div>
+          </div>
+
+          <div class="pt-3 sm:pt-4 border-t border-borderHairline">
+            <a 
+              href="https://www.google.com/maps/place/?q=place_id:ChIJ93eK8y_JXzkRjW6BHybprVo" 
+              target="_blank" 
+              class="flex items-center justify-between p-3.5 sm:p-4 rounded-xl sm:rounded-2xl bg-travertine/70 font-mono text-[11px] sm:text-xs text-ink hover:bg-travertine transition-colors"
+            >
+              <span>OPEN ALKAPURI ATELIER ON GOOGLE MAPS</span>
+              <span>↗</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="p-4 sm:p-6 rounded-2xl sm:rounded-3xl bg-stoneTaupe text-linen font-mono text-xs space-y-1.5 sm:space-y-2 shadow-sm">
+          <div class="flex justify-between font-medium text-[11px] sm:text-xs">
+            <span>DESIGNED & ENGINEERED BY PARTH</span>
+            <span>VADODARA</span>
+          </div>
+          <p class="font-sans text-[11px] sm:text-xs text-linen/80 leading-relaxed font-light">
+            Bespoke digital architecture for high-ticket turnkey design studios. Eliminating generic template aesthetics to capture discerning luxury patrons in Bhayli & Alkapuri.
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ==========================================
+       ARCHITECTURAL SPECIFICATION DRAWER MODAL
+       ========================================== -->
+  <div id="archiveModal" class="fixed inset-0 z-50 hidden bg-ink/75 backdrop-blur-md flex items-center justify-end">
+    <div id="archiveModalDrawer" class="relative w-full max-w-2xl h-full bg-ivory border-l border-borderHairline overflow-y-auto p-5 sm:p-10 flex flex-col justify-between shadow-2xl">
+      
+      <div>
+        <div class="flex justify-between items-center border-b border-borderHairline pb-4 mb-6">
+          <span class="font-mono text-xs text-warmSand uppercase tracking-widest">[ARCHITECTURAL SPECIFICATION PLATE]</span>
+          <button onclick="closeArchiveDrawer()" class="font-mono text-xs uppercase tracking-widest text-ink hover:underline p-2 -mr-2 active:scale-95 transition-transform">
+            [CLOSE ✕]
+          </button>
+        </div>
+
+        <div class="space-y-6">
+          <div class="aspect-[16/9] rounded-3xl overflow-hidden border border-borderHairline bg-parchment">
+            <img id="drawerCover" src="" alt="Project plate" class="w-full h-full object-cover"/>
+          </div>
+
+          <div>
+            <span id="drawerPlateTag" class="font-mono text-xs text-warmSand uppercase block mb-1"></span>
+            <h3 id="drawerTitle" class="font-serif text-3xl sm:text-4xl text-ink font-normal"></h3>
+          </div>
+
+          <div class="grid grid-cols-2 gap-4 p-5 rounded-2xl bg-travertine/60 font-mono text-xs">
+            <div>
+              <span class="text-warmSand text-[10px] block">LOCATION</span>
+              <span id="drawerLocation" class="text-ink font-medium"></span>
+            </div>
+            <div>
+              <span class="text-warmSand text-[10px] block">CARPET AREA</span>
+              <span id="drawerArea" class="text-ink font-medium"></span>
+            </div>
+            <div>
+              <span class="text-warmSand text-[10px] block">TURNKEY DURATION</span>
+              <span id="drawerTimeline" class="text-ink font-medium"></span>
+            </div>
+            <div>
+              <span class="text-warmSand text-[10px] block">DISCIPLINE</span>
+              <span id="drawerScope" class="text-ink font-medium"></span>
+            </div>
+          </div>
+
+          <div>
+            <span class="font-mono text-xs text-warmSand uppercase tracking-wider block mb-2">ARCHITECTURAL NARRATIVE</span>
+            <p id="drawerNarrative" class="text-xs sm:text-sm text-ink/80 font-light leading-relaxed"></p>
+          </div>
+
+          <div>
+            <span class="font-mono text-xs text-warmSand uppercase tracking-wider block mb-2">CURATED MATERIAL PALETTE</span>
+            <div id="drawerMaterials" class="flex flex-wrap gap-2"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="pt-8 mt-8 border-t border-borderHairline flex flex-col sm:flex-row gap-4 justify-between items-center">
+        <span class="font-mono text-xs text-warmSand">COMMISSION A SIMILAR PROGRAM</span>
+        <a href="#commission" onclick="closeArchiveDrawer()" class="px-6 py-3 rounded-full bg-ink text-linen font-mono text-xs uppercase tracking-wider hover:bg-espresso transition-all">
+          Inquire for Your Plot
+        </a>
+      </div>
+
+    </div>
+  </div>
+
+
+  <!-- ==========================================
+       EDITORIAL COLOPHON & FOOTER
+       ========================================== -->
+  <footer class="bg-espresso text-linen/75 font-mono text-xs py-10 sm:py-20 border-t border-white/10 reveal-fade-up">
+    <div class="max-w-[1600px] mx-auto px-4 sm:px-8 space-y-8 sm:space-y-12">
+      
+      <div class="grid grid-cols-1 md:grid-cols-12 gap-6 sm:gap-10 pb-8 sm:pb-12 border-b border-white/10">
+        
+        <div class="md:col-span-5 space-y-3 sm:space-y-4">
+          <div class="font-serif text-2xl sm:text-3xl text-linen font-light tracking-wide">DA STUDIOS ARCHITECTURE</div>
+          <p class="font-sans text-xs text-linen/70 font-light leading-relaxed max-w-sm">
+            Atelier for private architecture, bespoke turnkey interiors, and spatial curation. Serving discerning patrons across Bhayli, Sevasi, and Central Vadodara.
+          </p>
+          <div class="text-[10px] sm:text-[11px] text-linen/50">
+            Vicenza House 21, Friends Society, Alkapuri, Vadodara 390007
+          </div>
+        </div>
+
+        <div class="md:col-span-3 space-y-2 text-xs">
+          <span class="text-linen/40 uppercase block mb-3">KEY ATELIER DIRECTORY</span>
+          <div><a href="index.html" class="text-linen hover:underline font-bold">Atelier Home</a></div>
+          <div><a href="portfolio.html" class="text-linen hover:underline">Selected Portfolio</a></div>
+          <div><a href="services.html" class="text-linen hover:underline">Turnkey Services</a></div>
+          <div><a href="about.html" class="text-linen hover:underline">Philosophy & Craft</a></div>
+          <div><a href="contact.html" class="text-linen hover:underline">Schedule Consultation</a></div>
+        </div>
+
+        <div class="md:col-span-4 space-y-3 text-xs">
+          <span class="text-linen/40 uppercase block mb-3">DIRECT COMMUNICATION</span>
+          <div>TEL: <a href="tel:+918849410398" class="text-linen hover:underline">+91 88494 10398</a></div>
+          <div>HOURS: MON TO SAT, 10:00 TO 19:30 IST</div>
+          <div>ATELIER: ALKAPURI, VADODARA, GUJARAT</div>
+        </div>
+
+      </div>
+
+      <!-- Legal Links and Statutory Status -->
+      <div class="flex flex-col lg:flex-row justify-between items-center gap-6 text-[11px] text-linen/50">
+        <div>© 2026 DA STUDIOS ARCHITECTURE. ALL RIGHTS RESERVED.</div>
+        
+        <div class="flex flex-wrap gap-6 text-linen/80 font-sans text-xs">
+          <a href="privacy-policy.html" class="hover:text-linen transition-colors underline decoration-white/20 underline-offset-4">Privacy Policy</a>
+          <a href="terms-and-conditions.html" class="hover:text-linen transition-colors underline decoration-white/20 underline-offset-4">Terms & Conditions</a>
+        </div>
+
+        <div class="flex gap-4 font-mono text-[10px]">
+          <span>COORDINATES: 22.3072° N, 73.1812° E</span>
+          <span>BIM TO SITE FIDELITY</span>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+
+  <!-- ==========================================
+       CLEAN, BUG-FREE JAVASCRIPT SYSTEM
+       (Zero Blockers, 100% Reliability)
+       ========================================== -->
+  <script>
+    // 1. Mobile Navigation Drawer Toggle
+    const mobileBtn = document.getElementById('mobileMenuBtn');
+    const mobileDrawer = document.getElementById('mobileMenuDrawer');
+    if (mobileBtn && mobileDrawer) {
+      mobileBtn.addEventListener('click', () => {
+        mobileDrawer.classList.toggle('hidden');
+      });
+      document.querySelectorAll('.mobile-nav-link').forEach(link => {
+        link.addEventListener('click', () => {
+          mobileDrawer.classList.add('hidden');
+        });
+      });
+    }
+
+    // 2. Portfolio Carousel Controls
+    function scrollPortfolioCarousel(direction) {
+      const container = document.getElementById('portfolioScrollContainer');
+      if (container) {
+        const scrollAmount = container.clientWidth * 0.75 * direction;
+        container.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+      }
+    }
+
+    function filterPortfolio(cat, btn) {
+      document.querySelectorAll('.port-filter-btn').forEach(b => {
+        b.className = "port-filter-btn px-4 py-1.5 rounded-full text-linen hover:bg-white/10 transition-all";
+      });
+      btn.className = "port-filter-btn px-4 py-1.5 rounded-full bg-ivory text-ink font-medium transition-all";
+
+      document.querySelectorAll('.portfolio-item-card').forEach(card => {
+        if (cat === 'all' || card.classList.contains(cat)) {
+          card.style.display = 'block';
+        } else {
+          card.style.display = 'none';
+        }
+      });
+    }
+
+    // 3. As-Built vs 3D Simulation Curtain Logic
+    const curtainContainer = document.getElementById('interactiveCurtain');
+    const curtainClip = document.getElementById('curtainClippedView');
+    const curtainHandle = document.getElementById('curtainHandle');
+    let isCurtainSliding = false;
+
+    function moveCurtain(clientX) {
+      if (!curtainContainer) return;
+      const rect = curtainContainer.getBoundingClientRect();
+      let pos = (clientX - rect.left) / rect.width;
+      if (pos < 0.04) pos = 0.04;
+      if (pos > 0.96) pos = 0.96;
+      const pct = (pos * 100).toFixed(2);
+      curtainClip.style.width = pct + '%';
+      curtainHandle.style.left = pct + '%';
+    }
+
+    if (curtainContainer) {
+      curtainContainer.addEventListener('mousedown', (e) => {
+        isCurtainSliding = true;
+        moveCurtain(e.clientX);
+      });
+      window.addEventListener('mouseup', () => { isCurtainSliding = false; });
+      window.addEventListener('mousemove', (e) => {
+        if (!isCurtainSliding) return;
+        moveCurtain(e.clientX);
+      });
+
+      curtainContainer.addEventListener('touchstart', (e) => {
+        isCurtainSliding = true;
+        if (e.touches && e.touches[0]) moveCurtain(e.touches[0].clientX);
+      }, { passive: true });
+      window.addEventListener('touchend', () => { isCurtainSliding = false; });
+      window.addEventListener('touchmove', (e) => {
+        if (!isCurtainSliding) return;
+        if (e.touches && e.touches[0]) moveCurtain(e.touches[0].clientX);
+      }, { passive: true });
+    }
+
+    // 4. Specification Archive Drawer Data & Modal
+    const archiveData = [
+      {
+        plate: "PLATE 01 / DS-BH-01",
+        title: "The Courtyard Pavilion",
+        location: "Bhayli, Vadodara",
+        area: "9,500 sq.ft",
+        timeline: "14 Months (Turnkey)",
+        scope: "Architecture + Interiors + Landscape",
+        cover: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80",
+        narrative: "Designed for a family seeking refuge from urban velocity. A deep central water courtyard channels prevailing southwest breezes across the ground living floor. Continuous dry-laid Roman Travertine slabs connect internal living zones with the outdoor verandah.",
+        materials: ["Navona Travertine", "Smoked Oak Veneer", "Corten Overhangs", "Dornbracht Fittings"]
+      },
+      {
+        plate: "PLATE 02 / DS-AL-02",
+        title: "Sky Sanctuary Duplex",
+        location: "Alkapuri, Vadodara",
+        area: "6,200 sq.ft",
+        timeline: "8 Months",
+        scope: "Turnkey Interior Architecture",
+        cover: "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1200&q=80",
+        narrative: "Overlooking the verdant tree-cover of Alkapuri, this duplex balances tactile quietude with high-precision engineering. Features an acoustic private screening salon and bespoke bronze louver partitions.",
+        materials: ["Italian Statuario Marble", "Anodized Gunmetal", "Poliform Joinery", "Acoustic Wall Slatting"]
+      },
+      {
+        plate: "PLATE 03 / DS-SV-03",
+        title: "The Monolith Estate",
+        location: "Sevasi, Vadodara",
+        area: "12,000 sq.ft",
+        timeline: "18 Months",
+        scope: "Full Turnkey Architectural Construction",
+        cover: "https://images.unsplash.com/photo-1600566753376-12c8ab7fb75b?auto=format&fit=crop&w=1200&q=80",
+        narrative: "Board-marked structural concrete forms a heavy thermal buffer on south and west facades. The residence cantilevers over a private lap pool lined with flamed black granite.",
+        materials: ["Board-Marked Concrete", "Flamed Granite", "Burmese Teak", "Schuco Thermal Envelopes"]
+      },
+      {
+        plate: "PLATE 04 / DS-AL-04",
+        title: "Casa Travertino",
+        location: "Alkapuri, Vadodara",
+        area: "4,800 sq.ft",
+        timeline: "6 Months",
+        scope: "Neoclassical Interior Fit-Out",
+        cover: "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1200&q=80",
+        narrative: "An exploration of soft curves and seamless transitions. Slaked lime plaster coats every corridor wall, illuminated by recessed 2700K museum-grade linear channels.",
+        materials: ["Roman Travertine", "Slaked Lime Plaster", "Engineered European Oak", "Flos Luminaires"]
+      },
+      {
+        plate: "PLATE 05 / DS-RC-05",
+        title: "Aura Wellness Clinic",
+        location: "RC Dutt Road, Alkapuri",
+        area: "3,800 sq.ft",
+        timeline: "4.5 Months",
+        scope: "Executive Medical Atelier",
+        cover: "https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1200&q=80",
+        narrative: "A medical sanctuary designed to calm anxiety through natural acoustics and tactile honesty. Rounded micro-terrazzo reception consoles anchor the public spaces.",
+        materials: ["Cast-in-situ Terrazzo", "Curved Acoustic Timber", "Low-Iron Fluted Glass", "Champagne Trims"]
+      },
+      {
+        plate: "PLATE 06 / DS-GT-06",
+        title: "The Glasshouse Villa",
+        location: "Gotri-Bhayli, Vadodara",
+        area: "7,400 sq.ft",
+        timeline: "11 Months",
+        scope: "Turnkey Architecture & Landscape",
+        cover: "https://images.unsplash.com/photo-1613490493576-7fde63acd811?auto=format&fit=crop&w=1200&q=80",
+        narrative: "Maximizes garden views without heat penalty through calculated horizontal roof cantilevers that shade glass envelopes during summer midday peaks.",
+        materials: ["Double-Glazed Low-E Glass", "Raw Charcoal Quartzite", "Solid Teak Joinery", "Lutron Lighting"]
+      }
+    ];
+
+    function openArchiveDrawer(index) {
+      const data = archiveData[index];
+      if (!data) return;
+
+      document.getElementById('drawerCover').src = data.cover;
+      document.getElementById('drawerPlateTag').textContent = data.plate;
+      document.getElementById('drawerTitle').textContent = data.title;
+      document.getElementById('drawerLocation').textContent = data.location;
+      document.getElementById('drawerArea').textContent = data.area;
+      document.getElementById('drawerTimeline').textContent = data.timeline;
+      document.getElementById('drawerScope').textContent = data.scope;
+      document.getElementById('drawerNarrative').textContent = data.narrative;
+
+      const matContainer = document.getElementById('drawerMaterials');
+      matContainer.innerHTML = '';
+      data.materials.forEach(mat => {
+        const span = document.createElement('span');
+        span.className = "px-3 py-1 rounded-full border border-borderHairline bg-ivory font-mono text-[11px] text-ink";
+        span.textContent = mat;
+        matContainer.appendChild(span);
+      });
+
+      document.getElementById('archiveModal').classList.remove('hidden');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeArchiveDrawer() {
+      document.getElementById('archiveModal').classList.add('hidden');
+      document.body.style.overflow = 'auto';
+    }
+
+    document.getElementById('archiveModal').addEventListener('click', (e) => {
+      if (e.target.id === 'archiveModal') closeArchiveDrawer();
+    });
+
+    // 5. Feasibility Specifier Logic
+    let specRate = 3200;
+    let specMonthsBase = 14;
+    let specScopeMult = 1.35;
+    let specGradeMult = 1.35;
+    let specTypologyLabel = "Bespoke Bungalow";
+    let specScopeLabel = "Full Turnkey Architecture & Interiors";
+    let specGradeLabel = "Italian Prestige";
+
+    const specSlider = document.getElementById('specAreaSlider');
+    const specAreaText = document.getElementById('specAreaNumber');
+    const specCostText = document.getElementById('specOutputCost');
+    const specMonthsText = document.getElementById('specOutputMonths');
+    const specWhatsApp = document.getElementById('specWhatsAppLink');
+
+    function calculateSpecifier() {
+      const area = parseInt(specSlider.value, 10);
+      specAreaText.textContent = area.toLocaleString('en-IN');
+
+      const raw = area * specRate * specScopeMult * specGradeMult;
+      const lower = raw * 0.93;
+      const upper = raw * 1.07;
+
+      function formatCr(val) {
+        if (val >= 10000000) {
+          return '₹ ' + (val / 10000000).toFixed(2) + ' Cr';
+        } else {
+          return '₹ ' + (val / 100000).toFixed(0) + ' Lakhs';
+        }
+      }
+
+      specCostText.textContent = `${formatCr(lower)} to ${formatCr(upper)}`;
+      specCostText.classList.remove('spec-value-changed');
+      void specCostText.offsetWidth; // force browser reflow for clean pulse
+      specCostText.classList.add('spec-value-changed');
+
+      let months = Math.round(specMonthsBase * (0.85 + (area / 11000)));
+      if (specScopeMult < 0.6) months = Math.max(3, Math.round(months * 0.45));
+      specMonthsText.textContent = `${months} to ${months + 3} Months`;
+
+      const brief = `Namaste Da Studios Atelier (Alkapuri), I configured an architectural project brief:%0A%0A` +
+        `• Typology: ${encodeURIComponent(specTypologyLabel)}%0A` +
+        `• Area: ${area.toLocaleString('en-IN')} sq.ft%0A` +
+        `• Scope: ${encodeURIComponent(specScopeLabel)}%0A` +
+        `• Specification Grade: ${encodeURIComponent(specGradeLabel)}%0A` +
+        `• Estimated Investment: ${formatCr(lower)} - ${formatCr(upper)}%0A` +
+        `• Estimated Timeline: ${months}-${months + 3} Months%0A%0A` +
+        `I would like to arrange an atelier appointment to review architectural drawings and site feasibility.`;
+
+      specWhatsApp.href = `https://wa.me/918849410398?text=${brief}`;
+    }
+
+    // Typology buttons
+    document.querySelectorAll('.type-spec-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        document.querySelectorAll('.type-spec-btn').forEach(b => {
+          b.classList.remove('active', 'border-ink', 'bg-travertine');
+          b.classList.add('border-borderHairline', 'bg-ivory');
+        });
+        btn.classList.add('active', 'border-ink', 'bg-travertine');
+        btn.classList.remove('border-borderHairline', 'bg-ivory');
+
+        specRate = parseFloat(btn.getAttribute('data-rate'));
+        specMonthsBase = parseInt(btn.getAttribute('data-months'), 10);
+        specTypologyLabel = btn.querySelector('.font-serif').textContent;
+        calculateSpecifier();
+      });
+    });
+
+    // Scope buttons
+    document.querySelectorAll('.scope-spec-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        document.querySelectorAll('.scope-spec-btn').forEach(b => {
+          b.classList.remove('active', 'border-ink', 'bg-travertine');
+          b.classList.add('border-borderHairline', 'bg-ivory');
+        });
+        btn.classList.add('active', 'border-ink', 'bg-travertine');
+        btn.classList.remove('border-borderHairline', 'bg-ivory');
+
+        specScopeMult = parseFloat(btn.getAttribute('data-multiplier'));
+        specScopeLabel = btn.querySelector('.font-mono:first-child').textContent;
+        calculateSpecifier();
+      });
+    });
+
+    // Grade buttons
+    document.querySelectorAll('.grade-spec-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        document.querySelectorAll('.grade-spec-btn').forEach(b => {
+          b.classList.remove('active', 'border-ink', 'bg-travertine');
+          b.classList.add('border-borderHairline', 'bg-ivory');
+        });
+        btn.classList.add('active', 'border-ink', 'bg-travertine');
+        btn.classList.remove('border-borderHairline', 'bg-ivory');
+
+        specGradeMult = parseFloat(btn.getAttribute('data-multiplier'));
+        specGradeLabel = btn.querySelector('.font-mono:first-child').textContent;
+        calculateSpecifier();
+      });
+    });
+
+    if (specSlider) {
+      specSlider.addEventListener('input', calculateSpecifier);
+      calculateSpecifier();
+    }
+
+    // 6. Commission Form Submit
+    const inqForm = document.getElementById('editorialInquiryForm');
+    const inqConfirm = document.getElementById('inqConfirmation');
+
+    if (inqForm) {
+      inqForm.addEventListener('submit', (e) => {
+        e.preventDefault();
+        const name = document.getElementById('inqName').value;
+        const phone = document.getElementById('inqPhone').value;
+        const location = document.getElementById('inqLocation').value;
+        const area = document.getElementById('inqArea').value || 'Unspecified';
+        const brief = document.getElementById('inqBrief').value || 'Atelier Consultation';
+
+        inqForm.classList.add('opacity-40', 'pointer-events-none');
+        if (inqConfirm) inqConfirm.classList.remove('hidden');
+
+        const waText = `New Atelier Consultation Request [Vadodara]:%0A` +
+          `• Client: ${encodeURIComponent(name)}%0A` +
+          `• Phone: ${encodeURIComponent(phone)}%0A` +
+          `• Site: ${encodeURIComponent(location)}%0A` +
+          `• Area: ${encodeURIComponent(area)}%0A` +
+          `• Brief: ${encodeURIComponent(brief)}`;
+
+        setTimeout(() => {
+          window.open(`https://wa.me/918849410398?text=${waText}`, '_blank');
+          inqForm.reset();
+          inqForm.classList.remove('opacity-40', 'pointer-events-none');
+        }, 800);
+      });
+    }
+
+    // 7. Full Directional Scroll Motion Engine & Interactive Triggers
+    const revealSelector = '.motion-reveal, .reveal-slide-left, .reveal-slide-right, .reveal-fade-up, .reveal-scale, .expand-line';
+    
+    // Smooth Number Counter Engine (12 Years, 45+ Residences, 100% BIM Alignment)
+    let countersAnimated = false;
+    function triggerNumberCounters() {
+      if (countersAnimated) return;
+      countersAnimated = true;
+      document.querySelectorAll('.counter-number').forEach(counter => {
+        const target = parseInt(counter.getAttribute('data-target') || counter.textContent, 10);
+        if (!target) return;
+        const duration = 1500;
+        const startTime = performance.now();
+        function update(now) {
+          const elapsed = now - startTime;
+          const progress = Math.min(elapsed / duration, 1);
+          // Ease-out cubic for realistic luxury rolling
+          const ease = 1 - Math.pow(1 - progress, 3);
+          const current = Math.floor(ease * target);
+          counter.textContent = current;
+          if (progress < 1) {
+            requestAnimationFrame(update);
+          } else {
+            counter.textContent = target;
+          }
+        }
+        requestAnimationFrame(update);
+      });
+    }
+
+    // Curtain Demo Peek (Gently demonstrates interactivity on first view)
+    let curtainPeekDone = false;
+    function triggerCurtainPeek() {
+      if (curtainPeekDone) return;
+      const clip = document.getElementById('curtainClippedView');
+      const handle = document.getElementById('curtainHandle');
+      if (!clip || !handle) return;
+      curtainPeekDone = true;
+      setTimeout(() => {
+        const startTime = performance.now();
+        const duration = 1300;
+        function peek(now) {
+          const elapsed = now - startTime;
+          const progress = Math.min(elapsed / duration, 1);
+          const offset = Math.sin(progress * Math.PI) * 12; // Peeks left to 38% then returns to 50%
+          const pct = (50 - offset).toFixed(2);
+          clip.style.width = pct + '%';
+          handle.style.left = pct + '%';
+          if (progress < 1) {
+            requestAnimationFrame(peek);
+          } else {
+            clip.style.width = '50%';
+            handle.style.left = '50%';
+          }
+        }
+        requestAnimationFrame(peek);
+      }, 500);
+    }
+
+    try {
+      if ('IntersectionObserver' in window) {
+        const revealObserver = new IntersectionObserver((entries, observer) => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add('is-inview', 'in-view');
+              observer.unobserve(entry.target);
+
+              // Check if about section or counters entered view
+              if (entry.target.id === 'about' || entry.target.closest('#about') || entry.target.querySelector('.counter-number')) {
+                triggerNumberCounters();
+              }
+
+              // Check if simulation curtain entered view
+              if (entry.target.id === 'simulation' || entry.target.closest('#simulation') || entry.target.id === 'interactiveCurtain') {
+                triggerCurtainPeek();
+              }
+            }
+          });
+        }, {
+          threshold: 0.04,
+          rootMargin: '0px 0px -20px 0px'
+        });
+
+        document.querySelectorAll(revealSelector).forEach(el => {
+          revealObserver.observe(el);
+        });
+
+        // Also observe sections themselves for section-level triggers
+        const aboutSec = document.getElementById('about');
+        if (aboutSec) revealObserver.observe(aboutSec);
+        const simSec = document.getElementById('simulation');
+        if (simSec) revealObserver.observe(simSec);
+      } else {
+        document.querySelectorAll(revealSelector).forEach(el => el.classList.add('is-inview', 'in-view'));
+        triggerNumberCounters();
+      }
+    } catch (err) {
+      document.querySelectorAll(revealSelector).forEach(el => el.classList.add('is-inview', 'in-view'));
+      triggerNumberCounters();
+    }
+
+    // Watermark Subtle Parallax Shift on Scroll
+    const watermarkEl = document.getElementById('watermarkText');
+    if (watermarkEl) {
+      window.addEventListener('scroll', () => {
+        const rect = watermarkEl.getBoundingClientRect();
+        if (rect.top < window.innerHeight && rect.bottom > 0) {
+          const shift = ((window.innerHeight - rect.top) * 0.04).toFixed(1);
+          watermarkEl.style.transform = `translateY(${shift}px)`;
+        }
+      }, { passive: true });
+    }
+
+    // 8. Sticky Header Scroll Elevation
+    const mainHeader = document.getElementById('mainHeader');
+    if (mainHeader) {
+      window.addEventListener('scroll', () => {
+        if (window.scrollY > 40) {
+          mainHeader.classList.add('py-2', 'sm:py-3');
+          mainHeader.classList.remove('pt-4', 'sm:pt-6');
+        } else {
+          mainHeader.classList.remove('py-2', 'sm:py-3');
+          mainHeader.classList.add('pt-4', 'sm:pt-6');
+        }
+      }, { passive: true });
+    }
+  </script>
+</body>
+</html>
